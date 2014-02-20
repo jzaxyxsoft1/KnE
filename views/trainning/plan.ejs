@@ -55,7 +55,7 @@
         $('#mainContainer').hide();
         async.parallel([
             function (cb) {
-                $.getJSON(GV.NodeSvcUrl + 'base/getihi', {tp: 'BODefine', id: 'Knowledge'}, function (d) {
+                $.getJSON('/base/getihi', {tp: 'BODefine', id: 'Knowledge'}, function (d) {
                     GV.KTPS = d;
                     cb();
                 });
@@ -73,7 +73,7 @@
     })
 
     function bindList() {
-        $.getJSON(GV.NodeSvcUrl + 'base/getobjs', {tp: 'TrainningPlan', query: {}, option: {Name: 1}}, function (d) {
+        $.getJSON('/base/getobjs', {tp: 'TrainningPlan', query: {}, option: {Name: 1}}, function (d) {
             if (GV.list) {
                 ko.mapping.fromJS(d, GV.list);
             }
@@ -96,7 +96,7 @@
                     cb(null, o);
                 }
                 else {
-                    $.getJSON(GV.NodeSvcUrl + 'base/getobj', {tp: 'TrainningPlan', query: {_id: id}}, function (d) {
+                    $.getJSON('/base/getobj', {tp: 'TrainningPlan', query: {_id: id}}, function (d) {
                         cb(null, d);
                     });
                 }

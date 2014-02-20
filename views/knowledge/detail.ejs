@@ -14,7 +14,7 @@
 <script type="text/javascript">
     $(function () {
         $('#mainContainer').addClass('bg-color-blue');
-        $.getJSON(GV.NodeSvcUrl + 'base/getobj', {tp: 'KnowledgeContent', query: {_id: '<%=id%>'}}, function (d) {
+        $.getJSON('/base/getobj', {tp: 'KnowledgeContent', query: {_id: '<%=id%>'}}, function (d) {
             ko.applyBindings(d, document.getElementById('mainContainer'));
         })
     })

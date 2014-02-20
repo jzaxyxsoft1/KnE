@@ -38,7 +38,7 @@
 <script type="text/javascript">
     var examID = '<%=id%>', userID = '<%=u._id%>';
     $('#mainContainer').addClass('bg-color-blue');
-    $.getJSON(GV.NodeSvcUrl + 'question/get', {t: 'examquestions', id: examID}, function (d) {
+    $.getJSON('/question/get', {t: 'examquestions', id: examID}, function (d) {
         GV.Questions = d;
         GV.idx = 0;
         bind();
@@ -118,7 +118,7 @@
         });
         var rt = Math.round(df / zf * 100, 1);
         var rs = {ExamID: examID, Owner: {Name: '<%=u.Name%>', Value: '<%=u._id%>'}, TotalScore: zf, Score: df, CorrectRate: rt};
-        $.post(GV.NodeSvcUrl + 'exam/post', {t: 'saveexamresult', obj: JSON.stringify(rs)}, function (d) {
+        $.post('/exam/post', {t: 'saveexamresult', obj: JSON.stringify(rs)}, function (d) {
             if (d.msg) {
                 ko.applyBindings(rs, document.getElementById('d_result'));
                 showPnl('d_result');

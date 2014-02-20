@@ -55,7 +55,7 @@
     </li>
 </script>
 <script type="text/javascript">
-    $.getJSON(GV.NodeSvcUrl + 'base/getihi', {tp: 'BODefine', id: 'Knowledge'}, function (d) {
+    $.getJSON('/base/getihi', {tp: 'BODefine', id: 'Knowledge'}, function (d) {
         ko.applyBindings(d, document.getElementById('ul_tree'));
         $('#ul_tree').treeview({persist: "location", collapsed: true, unique: true}).show();
     });
@@ -66,7 +66,7 @@
         bindList();
     }
     function bindList() {
-        $.getJSON(GV.NodeSvcUrl + 'base/getobjs', {tp: 'Question', query: {'Define.Value': GV.Define.Value}}, function (d) {
+        $.getJSON('/base/getobjs', {tp: 'Question', query: {'Define.Value': GV.Define.Value}}, function (d) {
             _.each(d,function (i){
                 i.cnt= i.Content.replace(/<[^>]+>/g,'');
                 i.cnt= i.cnt.length>20? i.cnt.substr(0,20)+'...': i.cnt;
@@ -96,7 +96,7 @@
                     wcb(null, o)
                 }
                 else {
-                    $.getJSON(GV.NodeSvcUrl + 'base/getobj', {tp: 'Question', query: {_id: id}}, function (d) {
+                    $.getJSON('/base/getobj', {tp: 'Question', query: {_id: id}}, function (d) {
                         wcb(null, d);
                     })
                 }
