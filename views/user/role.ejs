@@ -1,0 +1,105 @@
+<% include ../Top.ejs %>
+<div class="fl hp98 pp1 oya" id="d_list" style="width:20%">
+    <b>用户角色</b><a href="javascript:edit(0)" class="ml10">添加</a>
+    <ul data-bind="foreach:$data">
+        <li><a data-bind="text:Name,click:function(){edit($data._id())}"></a></li>
+    </ul>
+</div>
+<div class="fr hp98 pp1 oya hide" id="d_edit" style="width:75%">
+    <div class="editor-container">
+        <p>
+            <!--ko if:$data._id()!=''-->
+            <b class="ml10">ID:</b> <span data-bind="text:_id"></span>
+            <!--/ko-->
+            <b class="ml10">角色名称:</b> <input type="text" data-bind="value:Name"/>
+        </p>
+        <fieldset class="wp98 pp1 oya" style="height: 80%">
+            <legend><strong>适用员工</strong></legend>
+            <div data-bind="foreach:Users" class="lh20">
+                <lable class="ilblk" style="width:100px;">
+                    <input type="checkbox" data-bind="value:_id,checked:$root.UserIDs"/>
+                    <span data-bind="text:Name"></span>
+                </lable>
+            </div>
+        </fieldset>
+        <div class="ac cb pt10">
+            <input type="button" value="保存" onclick="save()"/>
+            <input type="button" value="删除" onclick="del()" data-bind="if:$data._id()!=''" class="ml5"/>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function (){
+        $('#mainContainer').hide();
+        $.getJSON(GV.NodeSvcUrl+'base/getobjs',{tp:'User',query:{},option:{Name:1}},function(d){
+            GV.Users= d;
+            $('#mainContainer').show();
+        })
+    })
+    function bindList() {
+        $.getJSON(GV.NodeSvcUrl + 'base/getobjs', {tp: 'Role', query: {}, option: {Name: 1}}, function (ds) {
+            if (GV.list) {
+                ko.mapping.fromJS(ds, GV.list);
+            }
+            else {
+                GV.list = ko.mapping.fromJS(ds);
+                ko.applyBindings(GV.list, document.getexploded('d_list'));
+            }
+        });
+    }
+    function edit(id) {
+        async.waterfall([
+            function (cb){
+                if(id==0){
+                    cb(null,{
+                        _id:'',
+                        Name:'',
+                        UserIDs:[]
+                    });
+                }
+                 else{cb(null)}
+            },
+                function (o,cb){
+                    if(o){ cb(null,o);}
+                    else{
+                        $.getJSON(GV.NodeSvcUrl+'base/getobj',{tp:'Role',query:{_id:id}},function(d){ cb(null,d);})
+                    }
+                }
+        ], function (e, d) {
+            d.Users=GV.Users;
+            if (GV.mdl) {
+                ko.mapping.fromJS(d, GV.mdl);
+            }
+            else {
+                GV.mdl = ko.mapping.fromJS(d);
+                ko.applyBindings(GV.mdl, document.getexploded('d_edit'));
+            }
+            $('#d_edit').show();
+        });
+    }
+    function save(){
+        var m = ko.mapping.toJS(GV.mdl);
+        delete m.Users;
+        if(!m.Name){alert('请输入角色名称!'); return;}
+        $.post(GV.NodeSvcUrl+'base/postsave',{obj:JSON.stringify(m)},function (d){
+            alert(d.error||'删除完成!')
+            if(d.msg){
+                GV.mdl._id(d.ID);
+                bindList();
+            }
+        });
+    }
+    function del(){
+        if(window.confirm('是否删除角色'+GV.mdl.Name()+'?')){
+           $.getJSON(GV.NodeSvcUrl+'base/delete',{tp:'Role',query:{_id:GV.mdl._id()}},function(d){
+               alert(d.error||'删除完成!')
+               if(d.msg){
+                   bindList();
+                   $('#d_edit').hide();
+               }
+           })
+        }
+    }
+    bindList();
+</script>
+<% include ../Bottom.ejs %>

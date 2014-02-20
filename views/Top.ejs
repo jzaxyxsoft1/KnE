@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/redmond/jquery-ui-1.10.2.custom.min.css"/>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script type="text/javascript" src="/javascripts/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery-ui-1.10.2.custom.min.js"></script>
+    <script type="text/javascript" src="/javascripts/async.js"></script>
+    <script type="text/javascript" src="/javascripts/underscore-min.js"></script>
+    <script type="text/javascript" src="/javascripts/comm.js"></script>
+    <script type="text/javascript" src="/javascripts/knockout-2.2.1.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<div class="pa bg-color-grayDark"
+     style="top:0px; left:-200px ; width: 200px; height: 100%; overflow: hidden; overflow-y: auto;  z-index:9999;"
+     id="d_sysFuns">
+    <ul data-bind="template:{name:'tmplIHI',foreach:$data}">
+    </ul>
+</div>
+<script type="text/html" id="tmplIHI">
+    <li style="margin-left: 20px; line-height:30px;">
+        <a data-bind="attr:{href:Url}" style="color:#fff;">
+            <span data-bind="attr:{'class':icon}" class="color:#fff"></span>
+            <span data-bind="text:name" style="color:#fff"></span></a>
+        <ul data-bind="template:{name:'tmplIHI',foreach:items}"></ul>
+    </li>
+</script>
+<img src="/stylesheets/loading.gif" alt="" id="imgLoading"
+     style="position: absolute; top:45%; left: 46%; z-index: 9999; display: none;"/>
+
+<header style=" height:25px; padding-top: 5px;  background-color: #EFEFF2;">
+    <span id="MM" class="icon-list ml10 fg-color-darken fl pointer" style="margin-right: 30px; font-size:20px;" title="菜单"> </span>
+    <span class="icon-windows8 fg-color-blue fr mi  pointer" style="margin-right: 30px; font-size:20px;" title="主页" u="/main"></span>
+    <span class="icon-key fg-color-darken fr mi   pointer" style="margin-right: 30px; font-size:20px;" title="更改密码"
+          u="/user/m?t=changepwd"></span>
+</header>
+<script type="text/javascript">
+    $.getJSON('/admin/get', {t: 'sysfuns'}, function (d) {
+        ko.applyBindings(d, document.getElementById('d_sysFuns'));
+    });
+    $('#MM').click(function () {
+        $('#d_sysFuns').animate({left: 0}, function () {
+            $('body').on('click', function (e) {
+                console.log('a');
+                $('#d_sysFuns').animate({left: -200}, function () {
+                    $('body').off('click');
+                });
+            });
+        });
+    });
+    $('header .mi').click(function () {
+        window.location = $(this).attr('u');
+    });
+    var loading = $('#imgLoading');
+</script>
+<div id="mainContainer"   >
+

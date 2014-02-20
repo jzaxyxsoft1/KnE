@@ -1,0 +1,15 @@
+<%include ../Top.ejs%>
+<div class="mt10 wp90 mc" data-bind="foreach:$data">
+    <a target="_self" data-bind="attr:{'src':Url}" class="bg-color-blue fg-color-white border-color-blueDark p20">
+        <b data-bind="text:Name"></b>[<span data-bind="text:Define.Name"></span>]
+    </a>
+</div>
+<script type="text/javascript">
+    $.getJSON(GV.NodeSvcUrl+'trainning/get',{t:'getuserplan' },function(d){
+        _.each(d,function (i){
+            i.Url='/knowledge/get?t=detail&id='+ i._id;
+        });
+        ko.applyBindings(d,document.getElementById('mainContainer'));
+    })
+</script>
+<%include ../Bottom.ejs%>

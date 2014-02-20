@@ -1,0 +1,129 @@
+<% include ../Top.ejs %>
+<div id="d_content" class="wp96 bg-color-blueLight pp1 hide" style="border-radius: 10px;">
+    <div class="bg-color-white" style="width:96%; border-radius: 10px;">
+        <div data-bind="html:Content" class="wp96 pp2">
+
+        </div>
+        <div data-bind="foreach:Answers" class="wp96 pp2 bg-color-blueLight " style="line-height: 30px;">
+            <label class="ilblk" style="width:45%;">
+                <input data-bind="attr:{'type':$root.tp},value:Content,checked:results"/>
+                <span data-bind="Content"></span></label>
+        </div>
+        <div class="wp96 ac fg-color-red bg-color-gray" style="padding: 10px 2%;">
+            *单选题每题1分;多选题全部正确3分,部分正确1分
+        </div>
+    </div>
+    <div class="wp96 ac">
+        <a id="bt_P" href="javascript:go(-1)" class="fl"></a>
+        <input type="button" onclick="save()"/>
+        <a id="bt_N" href="javascript:go(1)" class="fr"></a>
+    </div>
+</div>
+<div id="d_result" class="wp100 hp100">
+    <div class="mc bg-color-blueLight" style="margin-top: 30px; border-radius: 10px; padding: 20px; width:280px;">
+        <div class="mc pp1 bg-color-white" style="border-radius: 10px; padding: 2%; width:96%">
+            <div></div>
+            <p><b>总分:</b><span data-bind="text:TotalScore"></span></p>
+
+            <p><b>得分:</b><span data-bind="text:Score"></span></p>
+
+            <p><b>正确率:</b><span data-bind="text:CorrectRate"></span>%</p>
+
+            <div class="pt10 ac">
+                <a href="javascript:history.go(-1)" class="bt">返回</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var examID = '<%=id%>', userID = '<%=u._id%>';
+    $('#mainContainer').addClass('bg-color-blue');
+    $.getJSON(GV.NodeSvcUrl + 'question/get', {t: 'examquestions', id: examID}, function (d) {
+        GV.Questions = d;
+        GV.idx = 0;
+        bind();
+        $('#d_content').show();
+    })
+    function bind() {
+        var k = GV.Questions[GV.idx];
+        k.tp = k.AnswerType == 1 ? 'radio' : 'checkbox';
+        k.results = k.results || (k.AnswerType == 1 ? '' : []);
+        if (GV.idx == 0) {
+            $('#bt_P').hide();
+        } else {
+            $('#bt_P').show();
+        }
+        if (GV.idx == GV.Questions.length - 1) {
+            $('#bt_N').hide()
+        } else {
+            $('#bt_N').show()
+        }
+        if (GV.Q) {
+            updateA();
+            ko.mapping.fromJS(k, GV.Q);
+        }
+        else {
+            GV.Q = ko.mapping.fromJS(k);
+            ko.applyBindings(GV.Q, document.getexploded('d_content'));
+        }
+    }
+    function go(i) {
+        GV.idx + i;
+        bind();
+    }
+    function updateA() {
+        var m = ko.mapping.toJS(GV.Q);
+        var l = _.find(GV.Questions, function (i) {
+            return i._id == m._id
+        });
+        l = m;
+    }
+    function save() {
+        updateA();
+        var zf = 0; //总分
+        var df = 0; //得分
+        var _t, _y, _n; //tmep
+        _.each(GV.Questions, function (i) {
+            //正确答案
+            var t = _.chain(i.Answers)
+                    .filter(function (i) {
+                        return i.IsCorrect
+                    })
+                    .map(function (i) {
+                        return i.Content
+                    })
+                    .value();
+
+            if (i.AnswerType == 1) {
+                //单选
+                zf++;
+                df = df + (i.results == t[0] ? 1 : 0);
+            }
+            else {
+                zf += 3;
+                //未答为0 ,
+                if (i.results.length == 0) {
+                    df += 0;
+                }
+                else {
+                    if (_.difference(t, i.results).length || _.difference(i.results, t).length) {
+                        df += 1;
+                    }
+                    else {
+                        df += 3;
+                    }
+                }
+            }
+
+        });
+        var rt = Math.round(df / zf * 100, 1);
+        var rs = {ExamID: examID, Owner: {Name: '<%=u.Name%>', Value: '<%=u._id%>'}, TotalScore: zf, Score: df, CorrectRate: rt};
+        $.post(GV.NodeSvcUrl + 'exam/post', {t: 'saveexamresult', obj: JSON.stringify(rs)}, function (d) {
+            if (d.msg) {
+                ko.applyBindings(rs, document.getElementById('d_result'));
+                showPnl('d_result');
+            }
+        });
+    }
+</script>
+<% include ../Bottom.ejs %>

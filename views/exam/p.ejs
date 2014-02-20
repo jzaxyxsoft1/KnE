@@ -1,0 +1,23 @@
+<%include ../Top.ejs%>
+<style type="text/css">
+   #d_list a{ width:136px;}
+</style>
+<div class="wp98 mt10 hide" id="d_list" data-bind="foreach:$data" style="letter-spacing: -4px;">
+    <a data-bind="attr:{'class':cls,'href':Url}" target="_self" style=" letter-spacing: 0px; margin-bottom: 4px;">
+        <span data-bind="text:Name"></span>
+    </a>
+</div>
+<script type="text/javascript">
+    $.getJSON(GV.NodeSvcUrl+'exam/get',{t:'userexams' },function(d){
+        var r=0;
+        _.each(ds,function (i){
+            if(r>bgColor.length-1){
+                r=0;
+            }
+            i.cls=bgColor[r]+' fg-color-white p20';
+            i.Url='/exam/get?t=detail?id='+ d._id;
+        })
+        ko.applyBindings(ds,document.getElementById('d_list'));
+    })
+</script>
+<%include ../Bottom.ejs%>

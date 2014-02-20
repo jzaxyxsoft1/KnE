@@ -1,0 +1,118 @@
+<% include ../Top.ejs %>
+<div class="wp100 hp100" id="mmc">
+    <div class="hp98 fl oya pp1" id="d_list" style="width:20%">
+        <b>考试定义</b><a href="javascript:edit(0)" class="ml10">添加</a>
+        <ul data-bind="foreach:$data">
+            <li><a data-bind="text:Name,click:function(){edit($data._id())}"></a></li>
+        </ul>
+    </div>
+    <div class="hp98 pp1 oya fr" id="d_edit" style="width:75%">
+        <div class="wp96 mc hp97 pp1">
+            <div class="fl pp1 bg-color-gray" style="width:28%; ">
+                <p><b>ID:</b><span data-bind="text:_id"></span></p>
+
+                <p><b>名称:</b><input type="text" data-bind="value:Name"/></p>
+                <p><b>状态:</b><label><input type="checkbox" data-bind="value:true,check:Active"/>开放</label></p>
+                <p><b>结束时间:</b><input type="text" data-bind="value:ETime"/></p>
+                <p><b>培训计划:</b><a href="javascript:showPnl('d_plan')" data-bind="text:Plan.Name" class="ml5"
+                                  title="单击更改相关培训计划"></a></p>
+            </div>
+            <fieldset class="fr hide oh  pp1" style="width:67%; height: 90%" data-bind="visible:$data.Items().length>0">
+                <legend><strong>试题设定</strong></legend>
+                <ul data-bind="foreach:Items" class="hp90 oya">
+                    <li><b><span data-bind="text:Name"></span>:</b>出<input type="text" data-bind="Value"
+                                                                           style="width:40px;"/>道试题
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="cb ac pt10">
+                <input type="button" value="保存" onclick="save()"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wp100 hp100 hide" id="d_plan">
+    <div class="mc mt10 hp90 lh25" data-bind="foreach:$data">
+        <a data-bind="text:Name,click:planSlt" class="ilblk" style="width:30%"></a>
+    </div>
+    <div class="ac pt10">
+        <input type="button" value="返回" onclick="showPnl('mms')"/>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('#mainContainer').hide();
+        $.getJSON(GV.NodeSvcUrl + 'base/getobjs', {tp: 'TrainningPlan', query: {ETime: {$le: Date.ToDateTimeString()}}}, function (d) {
+            ko.applyBindings(d, document.getElementById('d_plan'));
+            $('#mainContainer').show();
+        })
+    })
+    function bindList() {
+        $.getJSON(GV.NodeSvcUrl + 'base/getobjs', {tp: 'ExamDefine', option: {Name: 1}}, function (d) {
+            ko.applyBindings(d, document.getElementById('d_list'));
+        })
+    }
+    function edit(id) {
+        async.waterfall([
+            function (cb) {
+                if (id == 0) {
+                    var dat = new Date();
+                    dat.setMonth(dat.getMonth()+1);
+                    cb(null, {_id:'',Name:'',ETime:Date.ToDateTimeString(dat),Active:true,Plan:{Name:'单击选择培训计划',Value:''}});
+                }
+                else {
+                    cb(null)
+                }
+            },
+            function (o, cb) {
+                if (o) {
+                    cb(null, o);
+                }
+                else {
+                    $.getJSON(GV.NodeSvcUrl + 'base/getobj', {tp: 'ExamDefine', query: {_id: id}}, function (d) {
+                        cb(null, d);
+                    })
+                }
+            }
+        ], function (e, o) {
+            if (GV.mdl) {
+                ko.mapping.fromJS(o, GV.mdl);
+            }
+            else {
+                GV.mdl = ko.mapping.fromJS(o);
+                ko.applyBindings(GV.mdl, document.getexploded('d_edit'));
+            }
+            $('#d_edit').show();
+        });
+    }
+    function planSlt(d) {
+        GV.mdl.Plan.Name(d.Name());
+        GV.mdl.Plan.Value(d._id());
+        $.getJSON(GV.NodeSvcUrl + 'trainning/get', {t: 'planknowledgedefines', _id: d._id()}, function (d) {
+            GV.mdl.Items.removeAll();
+            _.each(d, function (i) {
+                i.Value = 10;
+                GV.mdl.Items.push(ko.mapping.fromJS(i));
+            });
+            showPnl('d_edit');
+        })
+    }
+    function save(){
+        var m = ko.mapping.toJS(GV.mdl);
+        var er ='';
+        if(!m.Name){ er='请输入考试名称!\r';}
+        if(!m.Plan.Value){ er+='请选择培训计划!\r';}
+        if(!m.ETime){ er+='请输入考试结束时间!\r';}
+        if(er!=''){alert(er);return;}
+        m.Items= _.filter(m.Items,function (i){return i.Items.Value!=0});
+        $.post(GV.NodeSvcUrl+'base/postsave',{tp:'ExamDefine',obj:JSON.stringify(m)},function(d){
+            alert(d.error||'保存成功!')
+            if (d.msg ){
+                GV.mdl._id(d.ID);
+                bindList();
+            }
+        });
+    }
+    bindList();
+</script>
+<% include ../Bottom.ejs %>

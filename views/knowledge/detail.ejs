@@ -1,0 +1,22 @@
+<% include ../Top.ejs %>
+<div class="bg-color-blueLight" style="width:96%; border-radius: 10px;">
+    <div class="bg-color-white pp1 mc" style="width:94%; border-radius: 10px;">
+        <div class="mc pp1" style="width:96%" data-bind="foreach:Contents">
+            <div data-bind="html:$data">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ac p10">
+    <a href="javascript:history.go(-1)" class="pt10 pb10 ilblk bg-color-blueDark fg-color-white"
+       style="width:80px;">返回</a>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('#mainContainer').addClass('bg-color-blue');
+        $.getJSON(GV.NodeSvcUrl + 'base/getobj', {tp: 'KnowledgeContent', query: {_id: '<%=id%>'}}, function (d) {
+            ko.applyBindings(d, document.getElementById('mainContainer'));
+        })
+    })
+</script>
+<% include ../Bottom.ejs %>

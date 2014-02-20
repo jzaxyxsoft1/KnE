@@ -1,0 +1,151 @@
+<% include ../Top.ejs %>
+<div class="fl hp98 pp1 oya" id="d_list" style="width:20%;">
+    <b>培训计划</b> <a href="javascript:edit(0)" class="ml10">添加</a>
+    <ul data-bind="foreach:$data">
+        <li class="lh22 ml10"><a data-bind="text:Name,click:function(){edit($data._id())}"></a></li>
+    </ul>
+</div>
+<div class="fr hp98 pp1 hide oya" id="d_edit" style="width:75%">
+    <div class="editor-container">
+        <div class="editor-label">ID:</div>
+        <div class="editor-field"><span data-bind="text:_id"></span></div>
+        <div class="editor-label">培训名称</div>
+        <div class="editor-field"><input type="text" data-bind="value:Name"/></div>
+        <div class="editor-label">开始时间</div>
+        <div class="editor-field"><input type="text" data-bind="value:BTime"/></div>
+        <div class="editor-label">结束时间</div>
+        <div class="editor-field"><input type="text" data-bind="value:ETime"/></div>
+        <b class="hr"></b>
+
+        <div class="wp100" id="tbs" style="width:70%;">
+            <ul>
+                <li><a href="#tb1">培训参与角色</a></li>
+                <li><a href="#tb2">培训内容</a></li>
+            </ul>
+            <div class="wp98 oya" style="height:70%" id="tb1">
+                <div data-bind="foreach:Roles">
+                    <label>
+                        <input type="checkbox" data-bind="value:_id,checked:$root.RoleIDs"/>
+                        <span data-bind="text:Name"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="wp98 oya" style="height:70%" id="tb2">
+                <ul data-bind="template:{name:'tmpl',foreach:KTPS}">
+                </ul>
+            </div>
+        </div>
+        <div class="cb ac pt10">
+            <input type="button" value="保存" onclick="save()" class="btE"/>
+            <input type="button" value="删除" onclick="del()" class="btE"/>
+        </div>
+    </div>
+</div>
+<script type="text/html" id="tmpl">
+    <li>
+        <label><input type="checkbox" data-bind="value:_id,checked:$root.KnowledgeDefineIDs"/><span
+                data-bind="text:Name"></span></label>
+        <ul data-bind="template:{name:'tmpl',foreach:items}">
+        </ul>
+    </li>
+</script>
+<script type="text/javascript">
+    $('#tabs').tabs();
+    $(function () {
+        $('#mainContainer').hide();
+        async.parallel([
+            function (cb) {
+                $.getJSON(GV.NodeSvcUrl + 'base/getihi', {tp: 'BODefine', id: 'Knowledge'}, function (d) {
+                    GV.KTPS = d;
+                    cb();
+                });
+            },
+            function (cb) {
+                $.getJSON('base/getobjs', {tp: 'Role', query: {}, option: {Name: 1}}, function (ds) {
+                    GV.Roles = ds;
+                    cb();
+                });
+            }
+        ], function (e) {
+            $('#mainContainer').show();
+        });
+
+    })
+
+    function bindList() {
+        $.getJSON(GV.NodeSvcUrl + 'base/getobjs', {tp: 'TrainningPlan', query: {}, option: {Name: 1}}, function (d) {
+            if (GV.list) {
+                ko.mapping.fromJS(d, GV.list);
+            }
+            else {
+                GV.list = ko.mapping.fromJS(d);
+                ko.applyBindings(GV.list, document.getexploded('d_list'));
+            }
+        })
+    }
+    function edit(id) {
+        async.waterfall([
+            function (cb) {
+                if (id == 0) {
+                    cb(null,{_id:'',Name:'',BTime:Date.ToDateTimeString(),ETime:Date.ToDateTimeString(),KnowledgeDefineIDs:[],RoleIDs:[]});
+                }
+                else cb(null);
+            },
+            function (o, cb) {
+                if (o) {
+                    cb(null, o);
+                }
+                else {
+                    $.getJSON(GV.NodeSvcUrl + 'base/getobj', {tp: 'TrainningPlan', query: {_id: id}}, function (d) {
+                        cb(null, d);
+                    });
+                }
+            }
+        ], function (e, obj) {
+            d.KTYS = GV.KTPS;
+            d.Roles = GV.Roles;
+            if (GV.mdl) {
+                ko.mapping.fromJS(d, GV.mdl);
+            }
+            else {
+                GV.mdl = ko.mapping.fromJS(d);
+                ko.applyBindings(GV.mdl, document.getexploded('d_edit'));
+            }
+            $('#d_edit').show();
+        });
+    }
+    function save(){
+        var m= ko.mapping.toJS(GV.mdl);
+        var e = '';
+        if(!m.Name){e='请输入培训计划名称!\r ';}
+        if(!m.BTime){e+='请输入培训开始时间!\r'}
+        if(!m.ETime){e+='请输入培训结束时间!\r'}
+        if(m.RoleIDs.length==0){e+='请选择使用用户角色!\r'}
+        if(m.KnowledgeIDs.length==0){e+='请选择培训内容!\r'}
+        if(e!='') {alert(e);return;}
+        else{
+            delete  m.KTYS;
+            delete  m.Roles;
+            $.post(GV.NodeSvcUrl+'base/postsave',{},function (d){
+                alert(d.error||'保存成功!')
+                if(d.msg){
+                    GV.mdl._id(d.ID);
+                    bindList();
+
+                }
+            });
+        }
+    }
+    function del(){
+        if(window.confirm('是否删除'+GV.mdl.Name()+'?')){
+            $.getJSON(GV.NodeSvcUrl+'base/delete',{tp:'TrainningPlan',query:{_id:GV.mdl._id()}},function(d){
+                alert(d.error||'删除完成!');
+                if(d.msg){
+                    bindList();
+                    $('#d_edit').hide();
+                }
+            })
+        }
+    }
+</script>
+<% include ../Bottom.ejs %>

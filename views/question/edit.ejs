@@ -1,0 +1,132 @@
+<% include ../Top.ejs %>
+<link rel='stylesheet' href='/treeview/jquery.treeview.css'/>
+<script src="/treeview/jquery.treeview.js"></script>
+<script src="/xheditor/xheditor_zh_cn.min.js"></script>
+<div class="fl hp98 pp1 oya" id="d_define" style="width:20%">
+    <b>试题类别</b>
+    <ul id="ul_tree" class="hide" data-bind="template:{name:tmpl,foreach:$data}">
+        <li></li>
+    </ul>
+</div>
+<div class="fr hide hp98 oh pp1" id="d_mmc" style="width:75%">
+    <div class="mt10 mc wp98">
+        <a href="javascript:edit(0)" id="bt_add" style="display: none;"></a>
+    </div>
+    <div class="wp100 hp90">
+        <div class="wp98 hp98 pp1 oya" id="d_list" data-bind="foreach:$data" style="line-height: 25px;">
+            <a data-bind="text:cnt,click:function(){edit($data._id())}" class="ilblk" style="width: 30%;"></a>
+        </div>
+        <div class="wp100 hp100 oya" id="d_edit">
+            <div class="wp98 mc hp100">
+                <!--ko if:$data._id()!=''-->
+                <b>ID:</b><span data-bind="text:_id"></span>
+                <!--/ko-->
+                <b class="ml10">题型:</b>
+                <select data-bind="value:AnswerType">
+                    <option value="1">单选</option>
+                    <option value="2">多选</option>
+                </select>
+            </div>
+            <div class="wp98" style="height: 75px;" id="d_taC">
+                <textarea id="ta" style="height:-webkit-calc(100%-(80px));width:98%; "></textarea>
+            </div>
+            <fieldset class="wp98 pp1">
+                <legend><strong>答案</strong><a href="javascript:addA()" class="=ml10">添加答案</a></legend>
+                <div data-bind="foreach:Answers" style="line-height: 25px;">
+                    <input class="ml10" type="text" data-bind="value:Content"/><label>
+                        <!--ko if:$root.AnswerType()=='1'-->
+                        <input type="radio" data-bind="value:true,checked:IsCorrect" name="rb_ans"/>
+                        <!--/ko-->
+                        <!--ko if:$root.AnswerType()=='2'-->
+                        <input type="checkbox" data-bind="value:true,checked:IsCorrect"/>
+                        <!--/ko-->
+                        <span>正确答案</span></label>
+                </div>
+            </fieldset>
+            <div class="ac pt10">
+                <input type="button" onclick="save()"/>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/html" id="tmpl">
+    <li><a data-bind="text:name,click:function(){dSlt($data._id,$data.name)}"></a>
+        <ul data-bind="template:{name:'tmpl',foreach:items}"></ul>
+    </li>
+</script>
+<script type="text/javascript">
+    $.getJSON(GV.NodeSvcUrl + 'base/getihi', {tp: 'BODefine', id: 'Knowledge'}, function (d) {
+        ko.applyBindings(d, document.getElementById('ul_tree'));
+        $('#ul_tree').treeview({persist: "location", collapsed: true, unique: true}).show();
+    });
+    var editor = $('#ta').editor();
+    function dSlt(id, name) {
+        GV.Define = {Name: name, Value: id};
+        $('#bt_add').text('添加【' + name + '】问题').show();
+        bindList();
+    }
+    function bindList() {
+        $.getJSON(GV.NodeSvcUrl + 'base/getobjs', {tp: 'Question', query: {'Define.Value': GV.Define.Value}}, function (d) {
+            _.each(d,function (i){
+                i.cnt= i.Content.replace(/<[^>]+>/g,'');
+                i.cnt= i.cnt.length>20? i.cnt.substr(0,20)+'...': i.cnt;
+            })
+            if (GV.list) {
+                ko.mapping.fromJS(d, GV.list);
+            }
+            else {
+                GV.list = ko.mapping.fromJS(d);
+                ko.applyBindings(GV.list, document.getexploded('d_list'));
+            }
+            showPnl('d_list');
+        })
+    }
+    function edit(id) {
+        async.waterfall([
+            function (wcb) {
+                if (id == 0) {
+                    wcb(null,{_id:'',AnswerType:'1',Answers:[],Content:''});
+                }
+                else {
+                    wcb(null)
+                }
+            },
+            function (o, wcb) {
+                if (o) {
+                    wcb(null, o)
+                }
+                else {
+                    $.getJSON(GV.NodeSvcUrl + 'base/getobj', {tp: 'Question', query: {_id: id}}, function (d) {
+                        wcb(null, d);
+                    })
+                }
+            }
+
+        ], function (e, o) {
+            if (GV.mdl) {
+                ko.mapping.fromJS(o, GV.mdl);
+            }
+            else {
+                GV.mdl = ko.mapping.fromJS(o);
+                ko.applyBindings(GV.mdl, document.getexploded('d_edit'));
+            }
+            editor.setSorce(o.Content);
+            showPnl('d_edit');
+        });
+    }
+    function addA() {
+        GV.mdl.Answers.push(ko.mapping.fromJS({Content: '', IsCorrect: false}));
+    }
+    function save()  {
+        var m = ko.mapping.toJS(GV.mdl);
+        m.Content= editor.getSource();
+        $.post(GV.NodeSvcUrl+'base/postsave',{tp:'Question',obj:JSON.stringify(m)},function(d){
+            alert(d.error||'保存成功!');
+            if(d.msg){
+                GV.mdl._id(d.ID);
+                bindList();
+            }
+        });
+    }
+</script>
+<% include ../Bottom.ejs %>
