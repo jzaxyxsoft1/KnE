@@ -6,10 +6,15 @@
 </div>
 <script type="text/javascript">
     $.getJSON('/trainning/get',{t:'getuserplan' },function(d){
+        if(d.length==0){
+            alert('无应参加培训计划!');
+            return;
+        }
         _.each(d,function (i){
             i.Url='/knowledge/get?t=detail&id='+ i._id;
         });
         ko.applyBindings(d,document.getElementById('mainContainer'));
+        $('#mainContainer').show()
     })
 </script>
 <%include ../Bottom.ejs%>

@@ -1,0 +1,105 @@
+<% include ../Top.ejs %>
+<div class="fl hp98 pp1 oh" id="d_list" style="width:20%">
+    <b>员工列表</b><a href="javascript:edit(0)" class="ml10">添加员工</a>
+    <ul class="hp95 oya" data-bind="foreach:$data">
+        <li><a data-bind="click:function(){edit($data._id()),text:Name}"></a></li>
+    </ul>
+</div>
+<div class="fr hp98 pp1 hide" id="d_edit" style="width:75%">
+    <div class="mc mt10" style="width:300px;">
+        <div class="editor-label">ID:</div>
+        <div class="editor-field"><span data-bind="text:_id"></span></div>
+        <div class="editor-label">姓名:</div>
+        <div class="editor-field"><input type="text" data-bind="value:Name"/></div>
+        <div class="cb ac pt10">
+            <input type="button" value="保存" onclick="save"/>
+            <input type="button" value="重置密码" onclick="resetPwd()"/>
+            <input type="button" value="删除" onclick="del()" data-bind="if:$data._id()!=''"/>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function bindList() {
+        $.getJSON('/base/getobjs', {tp: 'OrgUser', query: {}, option: {Name: 1}}, function (d) {
+            d = d.sortBy(d, function (i) {
+                return i.Name;
+            });
+            if (GV.list) {
+                ko.mapping.fromJS(d, GV.list);
+            }
+            else {
+                GV.list = ko.mapping.fromJS(d);
+                ko.applyBindings(GV.list, document.getexploded('d_list'));
+            }
+        })
+    }
+    function edit(id) {
+        async.waterfall([
+            function (cb) {
+                if (id == 0) {
+                    cb(null, {_id: '', Name: '', RoleIDs: [], Pwd: '8888'});
+                }
+                else cb(null);
+            },
+            function (o, cb) {
+                if (o) {
+                    cb(null, o);
+                }
+                else {
+                    $.getJSON('/base/getobj', {tp: 'OrgUser', query: {_id: id}}, function (d) {
+                        cb(null, d)
+                    })
+                }
+            }
+        ], function (e, d) {
+            if (GV.mdl) {
+                ko.mapping.fromJS(d, GV.mdl);
+            }
+            else {
+                GV.mdl = ko.mapping.fromJS(d);
+                ko.applyBindings(GV.mdl, document.getexploded('d_edit'));
+            }
+            $('#d_edit').show();
+        });
+    }
+    function save() {
+        var m = ko.mapping.toJS(GV.mdl);
+        var s = '';
+        if (!m.Name) {
+            s = '请输入姓名!\r'
+        }
+        if (s != '') {
+            alert(s);
+            return;
+        }
+        $.post('/base/postsave', {tp: 'OrgUser', obj: JSON.stringify(m)}, function (d) {
+            alert(d.error || '保存成功!');
+            if (d.msg) {
+                GV.mdl._id(d.ID);
+                bindList();
+            }
+        });
+    }
+    function del() {
+        if (window.confirm('是否删除员工' + GV.mdl.Name() + '?')) {
+            $.getJSON('/base/delete', {tp: 'OrgUser', query: {_id: GV.mdl._id()}}, function (d) {
+                alert(d.error || '删除完成!');
+                if (d.msg) {
+                    bindList();
+                    $('#d_edit').hide();
+                }
+            })
+        }
+    }
+    function resetPwd(){
+        if(window.confirm('是否重置员工'+GV.mdl.Name()+'密码?')){
+            $.getJSON('/user/get',{t:'resetpwd',id:GV.mdl._id()},function (d){
+                alert(d.error||'密码重置完成!');
+            })
+        }
+    }
+    bindList();
+    $('#mainContainer').show();
+</script>
+
+<% include ../Bottom.ejs %>

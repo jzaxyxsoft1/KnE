@@ -1,0 +1,28 @@
+<%include ../Top.ejs%>
+<div class="mc mt10" style="width:300">
+    <div class="editor-label">原密码</div>
+    <div class="editor-field"><input type="password" id="op"/></div>
+    <div class="editor-label">新密码</div>
+    <div class="editor-field"><input type="password" id="np"/></div>
+    <div class="editor-label">确认新密码</div>
+    <div class="editor-field"><input type="password" id="cnp"/></div>
+    <div class="ac cb pt10">
+        <input type="button" value="确定" onclick="sub()"/>
+    </div>
+</div>
+<script type="text/javascript">
+    function sub(){
+        var op =$('#op').val();
+        var np=$('#np').val();
+        var cnp=$('#cnp').val();
+        if(np!==cnp){
+            alert('信密码和确认密码不符!');
+            return;
+        }
+        $.getJSON('/user/get',{t:'changepwd',op:op,np:np},function (d){
+            alert(d.error||'密码已更改!\r下次登录请使用新密码!');
+
+        })
+    }
+</script>
+<%include ../Bottom.ejs%>

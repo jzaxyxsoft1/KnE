@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <style type="text/css">
+        form p b {
+            display: inline-block;
+            width: 60px;
+            text-align: right;
+        }
+
+        form input[type=text], form input[type=password] {
+            width: 150px;
+        }
+    </style>
+</head>
+<body class="bg-color-blue">
+<div class=" fg-color-yellow  ac" style="margin-top: 50px; font-weight:900; font-size: 40px;">
+    <b style=" text-shadow: 2px 2px #da532c; font-family:SimHei"> 奥星越秀在线培训系统</b>
+</div>
+<div class="mc bg-color-blueLight" style="border-radius: 20px; width:300px; padding: 20px;">
+
+    <div class="mc bg-color-gray" style="width:250px; border-radius: 15px; padding: 20px;">
+        <form action="/index/postl" method="post" name="form">
+            <p><b>登录名:</b><input type="text" name="n" value="SuperGA"/></p>
+
+            <p><b>密码:</b><input type="password" name="p" value="9998"/></p>
+            <% if(msg != null){ %>
+            <div class="ac fred">
+                *登录名或密码错误!
+            </div>
+            <% } %>
+            <div class="ac p10">
+                <input type="submit" value="登录"/>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

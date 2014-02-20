@@ -42,7 +42,7 @@ exports.get = function (req, res) {
             var sfs;
             var m = req.query['m'];
 
-            if (m) {
+            if (m=='0') {
                 sfs = Svc.getGVObjs('SysFun', function (i) {
                     return i._id.length < 3;
                 })
