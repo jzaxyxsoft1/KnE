@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="812d8ec0-48b4-4641-a975-e26f8f1cdb08" name="Default" comment="">
+    <list default="true" id="812d8ec0-48b4-4641-a975-e26f8f1cdb08" name="Default" comment="Initial commit&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/exam/define.ejs" afterPath="$PROJECT_DIR$/views/exam/define.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/trainning/plan.ejs" afterPath="$PROJECT_DIR$/views/trainning/plan.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user/role.ejs" afterPath="$PROJECT_DIR$/views/user/role.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/question/edit.ejs" afterPath="$PROJECT_DIR$/views/question/edit.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/trainning.js" afterPath="$PROJECT_DIR$/controller/trainning.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="KnE.iws" />
@@ -28,56 +28,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="role.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/user/role.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="6" selection-start="190" selection-end="266" vertical-scroll-proportion="-1.9642857" vertical-offset="21" max-vertical-offset="2033">
-              <folding>
-                <element signature="e#3351#3428#0" expanded="false" />
-                <element signature="e#3466#3817#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="define.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/exam/define.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="45" selection-start="1924" selection-end="1931" vertical-scroll-proportion="0.37748346" vertical-offset="570" max-vertical-offset="2451">
+            <state line="53" column="21" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.24358974" vertical-offset="342" max-vertical-offset="1691">
               <folding>
-                <element signature="e#1947#1964#0" expanded="true" />
+                <element signature="e#105#122#0" expanded="true" />
+                <element signature="e#391#408#0" expanded="true" />
+                <element signature="tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#div#1" expanded="false" />
+                <element signature="e#1953#1970#0" expanded="true" />
+                <element signature="e#3120#3872#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comm.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/comm.js">
+      <file leaf-file-name="trainning.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/trainning.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="39" selection-start="5851" selection-end="5851" vertical-scroll-proportion="0.0" vertical-offset="2246" max-vertical-offset="3534">
+            <state line="46" column="0" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0" vertical-offset="753" max-vertical-offset="1273">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plan.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/trainning/plan.ejs">
+      <file leaf-file-name="edit.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/question/edit.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="15" selection-start="5319" selection-end="5319" vertical-scroll-proportion="-16.5" vertical-offset="1191" max-vertical-offset="1805">
+            <state line="122" column="17" selection-start="4915" selection-end="4915" vertical-scroll-proportion="-69.03571" vertical-offset="385" max-vertical-offset="2603">
               <folding>
-                <element signature="e#66#84#0" expanded="true" />
-                <element signature="e#351#368#0" expanded="true" />
-                <element signature="e#977#995#0" expanded="true" />
-                <element signature="e#1166#1184#0" expanded="true" />
-                <element signature="e#1529#1547#0" expanded="true" />
-                <element signature="e#2291#2742#0" expanded="false" />
-                <element signature="e#2844#3212#0" expanded="false" />
-                <element signature="e#3235#4241#0" expanded="false" />
-                <element signature="e#4962#5303#0" expanded="false" />
-                <marker date="1392965551619" expanded="true" signature="1941:2181" placeholder="..." />
-                <marker date="1392965551619" expanded="true" signature="1957:2095" placeholder="..." />
-                <marker date="1392965551619" expanded="true" signature="2042:2087" placeholder="..." />
-                <marker date="1392965551619" expanded="true" signature="2157:2171" placeholder="..." />
+                <marker date="1392968620984" expanded="true" signature="2473:2624" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Top.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/Top.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="45" selection-start="184" selection-end="196" vertical-scroll-proportion="-4.071429" vertical-offset="38" max-vertical-offset="1406">
+              <folding>
+                <marker date="1392968113530" expanded="false" signature="1106:1142" placeholder="..." />
+                <marker date="1392968113530" expanded="true" signature="1143:1431" placeholder="..." />
+                <marker date="1392968113530" expanded="false" signature="1191:1202" placeholder="..." />
+                <marker date="1392968113530" expanded="true" signature="1203:1351" placeholder="..." />
+                <marker date="1392968113530" expanded="false" signature="1329:1339" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -101,8 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/views/question/edit.ejs" />
-        <option value="$PROJECT_DIR$/views/trainning/p.ejs" />
         <option value="$PROJECT_DIR$/controller/admin.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/main.ejs" />
@@ -116,6 +110,8 @@
         <option value="$PROJECT_DIR$/views/user/role.ejs" />
         <option value="$PROJECT_DIR$/views/trainning/plan.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/comm.js" />
+        <option value="$PROJECT_DIR$/views/question/edit.ejs" />
+        <option value="$PROJECT_DIR$/controller/trainning.js" />
         <option value="$PROJECT_DIR$/views/exam/define.ejs" />
       </list>
     </option>
@@ -216,6 +212,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="question" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KnE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KnE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="knowledge" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -276,6 +290,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KnE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KnE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -305,6 +337,127 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\NodeProjects\KnE\views" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/controller/base.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/controller/knowledge.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/SVC/BaseSvc.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/public/stylesheets/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/Bottom.ejs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/Top.ejs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/exam/define.ejs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/knowledge/define.ejs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/knowledge/edit.ejs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/user/edit.ejs</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -386,7 +539,11 @@
       <created>1392954711354</created>
       <updated>1392954711354</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial commit&#10;">
+      <created>1392967282473</created>
+      <updated>1392967282473</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -413,21 +570,21 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494382" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25093076" sideWeight="0.609215" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39078498" sideWeight="0.49962547" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25093076" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5003723" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3956229" sideWeight="0.50037456" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.4996277" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989899" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -453,45 +610,14 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="33" />
+      <option name="time" value="35" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controller/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1391" selection-end="1417" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1995">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/user/changepwd.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="33" selection-start="701" selection-end="701" vertical-scroll-proportion="0.9033333" vertical-offset="71" max-vertical-offset="627" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="24" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/Top.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="32" selection-start="2515" selection-end="2515" vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="1330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="66" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.0" vertical-offset="665" max-vertical-offset="2299">
-          <folding>
-            <element signature="e#1758#2295#0" expanded="false" />
-            <element signature="e#2337#4149#0" expanded="false" />
-            <element signature="e#4192#4570#0" expanded="false" />
-            <element signature="e#4613#5149#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -547,16 +673,6 @@
     <entry file="file://$PROJECT_DIR$/views/user/role.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="6" selection-start="190" selection-end="266" vertical-scroll-proportion="-1.9642857" vertical-offset="21" max-vertical-offset="2033">
-          <folding>
-            <element signature="e#3351#3428#0" expanded="false" />
-            <element signature="e#3466#3817#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/comm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="39" selection-start="5851" selection-end="5851" vertical-scroll-proportion="0.0" vertical-offset="2246" max-vertical-offset="3534">
           <folding />
         </state>
       </provider>
@@ -574,19 +690,67 @@
             <element signature="e#2844#3212#0" expanded="false" />
             <element signature="e#3235#4241#0" expanded="false" />
             <element signature="e#4962#5303#0" expanded="false" />
-            <marker date="1392965551619" expanded="true" signature="1941:2181" placeholder="..." />
-            <marker date="1392965551619" expanded="true" signature="1957:2095" placeholder="..." />
-            <marker date="1392965551619" expanded="true" signature="2042:2087" placeholder="..." />
-            <marker date="1392965551619" expanded="true" signature="2157:2171" placeholder="..." />
+            <marker date="1392965551619" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392965551619" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392965551619" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392965551619" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Top.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="45" selection-start="184" selection-end="196" vertical-scroll-proportion="-4.071429" vertical-offset="38" max-vertical-offset="1406">
+          <folding>
+            <marker date="1392968113530" expanded="false" signature="1106:1142" placeholder="..." />
+            <marker date="1392968113530" expanded="true" signature="1143:1431" placeholder="..." />
+            <marker date="1392968113530" expanded="false" signature="1191:1202" placeholder="..." />
+            <marker date="1392968113530" expanded="true" signature="1203:1351" placeholder="..." />
+            <marker date="1392968113530" expanded="false" signature="1329:1339" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/question/edit.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="17" selection-start="4915" selection-end="4915" vertical-scroll-proportion="-69.03571" vertical-offset="385" max-vertical-offset="2603">
+          <folding>
+            <marker date="1392968620984" expanded="true" signature="2473:2624" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/trainning.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0" vertical-offset="753" max-vertical-offset="1273">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/comm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="9" selection-start="2992" selection-end="2992" vertical-scroll-proportion="0.33150685" vertical-offset="924" max-vertical-offset="3553">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/underscore/underscore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="2" selection-start="5947" selection-end="5947" vertical-scroll-proportion="-0.44931507" vertical-offset="3299" max-vertical-offset="24301">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/exam/define.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="45" selection-start="1924" selection-end="1931" vertical-scroll-proportion="0.37748346" vertical-offset="570" max-vertical-offset="2451">
+        <state line="53" column="21" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.24358974" vertical-offset="342" max-vertical-offset="1691">
           <folding>
-            <element signature="e#1947#1964#0" expanded="true" />
+            <element signature="e#105#122#0" expanded="true" />
+            <element signature="e#391#408#0" expanded="true" />
+            <element signature="tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#1" expanded="false" />
+            <element signature="e#1953#1970#0" expanded="true" />
+            <element signature="e#3120#3872#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -47,14 +47,16 @@ exports.get = function (req, res) {
             var id= req.query['id'];
             async.waterfall([
                 function (wcb){
-                    db.TrainningPlan.findOne({_id:id},{KnowledgeIDs:1},wcb);
+                    db.TrainningPlan.findOne({_id:id},{KnowledgeDefineIDs:1},wcb);
                 },
-                function (dids,wcb){
-                    db.BODefine.find({_id:{$in:dids}},{Name:1},wcb)
+                function (plan,wcb){
+                    db.BODefine.find({_id:{$in:plan.KnowledgeDefineIDs}},{Name:1}).toArray( wcb)
                 }
             ],function (e,o){
                 res.json(o);
             })
             break;
+
+
     }
 }

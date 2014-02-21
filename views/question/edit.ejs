@@ -1,6 +1,6 @@
 <% include ../Top.ejs %>
-<link rel='stylesheet' href='/treeview/jquery.treeview.css'/>
-<script src="/treeview/jquery.treeview.js"></script>
+<link rel='stylesheet' href='/stylesheets/treeview/jquery.treeview.css'/>
+<script src="/stylesheets/treeview/jquery.treeview.js"></script>
 <script src="/xheditor/xheditor_zh_cn.min.js"></script>
 <div class="fl hp98 pp1 oya" id="d_define" style="width:20%">
     <b>试题类别</b>
@@ -120,7 +120,7 @@
     function save()  {
         var m = ko.mapping.toJS(GV.mdl);
         m.Content= editor.getSource();
-        $.post(GV.NodeSvcUrl+'base/postsave',{tp:'Question',obj:JSON.stringify(m)},function(d){
+        $.post('/base/postsave',{tp:'Question',obj:JSON.stringify(m)},function(d){
             alert(d.error||'保存成功!');
             if(d.msg){
                 GV.mdl._id(d.ID);

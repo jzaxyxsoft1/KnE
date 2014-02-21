@@ -17,10 +17,10 @@
                 <p><b>培训计划:</b><a href="javascript:showPnl('d_plan')" data-bind="text:Plan.Name" class="ml5"
                                   title="单击更改相关培训计划"></a></p>
             </div>
-            <fieldset class="fr hide oh  pp1" style="width:67%; height: 90%" data-bind="visible:$data.Items().length>0">
+            <fieldset class="fr   oh  pp1" style="width:67%; height: 90%" data-bind="visible:$data.Items().length>0">
                 <legend><strong>试题设定</strong></legend>
                 <ul data-bind="foreach:Items" class="hp90 oya">
-                    <li><b><span data-bind="text:Name"></span>:</b>出<input type="text" data-bind="Value"
+                    <li><b><span data-bind="text:Name"></span>:</b>出<input type="text" data-bind="value:Value"
                                                                            style="width:40px;"/>道试题
                     </li>
                 </ul>
@@ -32,7 +32,7 @@
         </div>
     </div>
 </div>
-<div class="wp100 hp100  " id="d_plan">
+<div class="wp100 hp100 hide" id="d_plan">
     <div class="mc mt10 hp90 lh25" data-bind="foreach:$data">
         <a data-bind="text:Name,click:planSlt" class="ilblk" style="width:30%"></a>
     </div>
@@ -45,14 +45,26 @@
         $('#mainContainer').hide();
         $.getJSON('/base/getobjs', {tp: 'TrainningPlan',  query: {$where:'this.ETime>="'+Date.ToDateTimeString()+'"'}}
                 , function (d) {
-            ko.applyBindings(d, document.getElementById('d_plan'));
+                    if (GV.TRP) {
+                        ko.mapping.fromJS(d, GV.TRP);
+                    }
+                    else {
+                        GV.TRP = ko.mapping.fromJS(d);
+                        ko.applyBindings(GV.TRP, document.getElementById('d_plan'));
+                    }
             $('#mainContainer').show();
         })
     })
     function bindList() {
         $.getJSON('/base/getobjs', {tp: 'ExamDefine', option: {Name: 1}}, function (d) {
-            ko.mapping.fromJS(d);
-            ko.applyBindings(d, document.getElementById('d_list'));
+            if (GV.ExD) {
+                ko.mapping.fromJS(d, GV.ExD);
+            }
+            else {
+                GV.ExD = ko.mapping.fromJS(d);
+                ko.applyBindings(GV.ExD, document.getElementById('d_list'));
+            }
+
         })
 
     }
@@ -99,7 +111,8 @@
                 i.Value = 10;
                 GV.mdl.Items.push(ko.mapping.fromJS(i));
             });
-            showPnl('d_edit');
+
+            showPnl('mmc');
         })
     }
     function save(){
@@ -109,7 +122,7 @@
         if(!m.Plan.Value){ er+='请选择培训计划!\r';}
         if(!m.ETime){ er+='请输入考试结束时间!\r';}
         if(er!=''){alert(er);return;}
-        m.Items= _.filter(m.Items,function (i){return i.Items.Value!=0});
+        m.Items= _.filter(m.Items,function (i){return i.Value!=0});
         $.post('/base/postsave',{tp:'ExamDefine',obj:JSON.stringify(m)},function(d){
             alert(d.error||'保存成功!')
             if (d.msg ){
