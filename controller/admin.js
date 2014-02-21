@@ -2,11 +2,21 @@ var Svc = require('Svc').Svc;
 var db = require('DB').DB;
 var _ = require('underscore');
 var async=require('async');
+var pinyin=require('pjpinyin');
 exports.get = function (req, res) {
     var t = req.query['t'].toLowerCase();
     var tp, id;
     switch (t) {
-
+        case 'a':
+            db.OrgUser.find().toArray(function (e,ds){
+                async.each(ds, function (i,acb){
+                    i.Simcode = pinyin(i.Name, '').toUpperCase();
+                    db.OrgUser.update({_id:i._id},{$set:{Simcode:i.Simcode}},acb);
+                },function(e){
+                    res.json('Done');
+                });
+            })
+            break;
 //        case 'boimpt':
 //            var ds = Svc.getGVObjs('BODefine', function (i) {
 //                return true;

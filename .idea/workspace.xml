@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812d8ec0-48b4-4641-a975-e26f8f1cdb08" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user/edit.ejs" afterPath="$PROJECT_DIR$/views/user/edit.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Bottom.ejs" afterPath="$PROJECT_DIR$/views/Bottom.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Top.ejs" afterPath="$PROJECT_DIR$/views/Top.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/admin.js" afterPath="$PROJECT_DIR$/controller/admin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user/role.ejs" afterPath="$PROJECT_DIR$/views/user/role.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="KnE.iws" />
@@ -27,42 +30,77 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="edit.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/user/edit.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="17" selection-start="1817" selection-end="1817" vertical-scroll-proportion="1.7733333" vertical-offset="342" max-vertical-offset="1786">
-              <folding>
-                <element signature="e#344#361#0" expanded="true" />
-                <element signature="e#2835#3190#0" expanded="false" />
-                <element signature="e#3214#3426#0" expanded="false" />
-              </folding>
+            <state line="24" column="30" selection-start="1175" selection-end="1175" vertical-scroll-proportion="-4.321429" vertical-offset="335" max-vertical-offset="931">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.ejs" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="49" selection-start="255" selection-end="255" vertical-scroll-proportion="-4.56" vertical-offset="0" max-vertical-offset="21774">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sysadmin.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/sysadmin.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="41" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="874">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="role.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/user/role.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="64" selection-start="2880" selection-end="2880" vertical-scroll-proportion="-35.964287" vertical-offset="0" max-vertical-offset="1748">
+            <state line="41" column="47" selection-start="1795" selection-end="1795" vertical-scroll-proportion="0.7665706" vertical-offset="513" max-vertical-offset="1425">
               <folding>
-                <element signature="tag#div#0" expanded="false" />
-                <element signature="tag#div#1" expanded="false" />
+                <element signature="e#1346#1598#0" expanded="true" />
+                <element signature="e#1453#1591#0" expanded="true" />
+                <element signature="e#2010#3027#0" expanded="true" />
+                <element signature="e#2036#2682#0" expanded="true" />
+                <element signature="e#2700#3019#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Top.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/Top.ejs">
+      <file leaf-file-name="admin.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="32" selection-start="2466" selection-end="2466" vertical-scroll-proportion="2.5" vertical-offset="982" max-vertical-offset="1349">
+            <state line="17" column="14" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1539">
               <folding>
-                <marker date="1392905606501" expanded="false" signature="1147:1183" placeholder="..." />
-                <marker date="1392905606501" expanded="true" signature="1184:1472" placeholder="..." />
-                <marker date="1392905606501" expanded="false" signature="1232:1243" placeholder="..." />
-                <marker date="1392905606501" expanded="true" signature="1244:1392" placeholder="..." />
-                <marker date="1392905606501" expanded="false" signature="1370:1380" placeholder="..." />
+                <element signature="e#330#632#0" expanded="true" />
+                <element signature="e#379#547#0" expanded="true" />
+                <element signature="e#559#616#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseSvc.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/SVC/BaseSvc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="373" column="71" selection-start="14745" selection-end="14756" vertical-scroll-proportion="0.0" vertical-offset="1127" max-vertical-offset="2603">
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/SVC/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,8 +108,19 @@
       <file leaf-file-name="user.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="24" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+            <state line="32" column="24" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bottom.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/Bottom.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="7" selection-start="121" selection-end="121" vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="209">
+              <folding>
+                <marker date="1392957270150" expanded="true" signature="37:104" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,6 +133,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
@@ -99,7 +149,6 @@
         <option value="$PROJECT_DIR$/views/question/edit.ejs" />
         <option value="$PROJECT_DIR$/views/trainning/plan.ejs" />
         <option value="$PROJECT_DIR$/views/trainning/p.ejs" />
-        <option value="$PROJECT_DIR$/controller/admin.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/main.ejs" />
         <option value="$PROJECT_DIR$/views/user/changepwd.ejs" />
@@ -108,7 +157,10 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/mm.ejs" />
         <option value="$PROJECT_DIR$/views/Top.ejs" />
+        <option value="$PROJECT_DIR$/views/Bottom.ejs" />
+        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/views/user/edit.ejs" />
+        <option value="$PROJECT_DIR$/controller/admin.js" />
         <option value="$PROJECT_DIR$/views/user/role.ejs" />
       </list>
     </option>
@@ -117,7 +169,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -145,7 +197,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -188,11 +239,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -206,7 +253,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KnE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KnE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SVC" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -226,6 +291,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,15 +315,121 @@
       <recent name="D:\NodeProjects\KnE\views" />
     </key>
   </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/user/edit.ejs</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/user/role.ejs</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
+  </component>
   <component name="RunManager" selected="Node.js.app.js">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -268,15 +440,23 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -325,11 +505,7 @@
       <created>1392897399978</created>
       <updated>1392897399978</updated>
     </task>
-    <task id="LOCAL-00003" summary="Initial commit&#10;">
-      <created>1392954711354</created>
-      <updated>1392954711354</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -353,27 +529,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" sideWeight="0.49962825" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" sideWeight="0.49962825" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494382" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25093076" sideWeight="0.6078767" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39212328" sideWeight="0.49962547" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25055763" sideWeight="0.6078767" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3277592" sideWeight="0.50037175" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3956229" sideWeight="0.50037456" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.49962825" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989899" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -400,6 +576,33 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/user/edit.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="65" selection-start="263" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sysadmin.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="41" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="874">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/role.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="5" selection-start="3385" selection-end="3385" vertical-scroll-proportion="0.0" vertical-offset="1323" max-vertical-offset="2261">
+          <folding>
+            <element signature="e#1346#1598#0" expanded="true" />
+            <element signature="e#1453#1591#0" expanded="true" />
+            <element signature="e#2010#3027#0" expanded="true" />
+            <element signature="e#2036#2682#0" expanded="true" />
+            <element signature="e#2700#3019#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/trainning/plan.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="17" selection-start="3663" selection-end="3663" vertical-scroll-proportion="0.25562373" vertical-offset="1699" max-vertical-offset="2964" />
@@ -424,9 +627,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="10" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="1387">
-          <folding />
-        </state>
+        <state line="37" column="10" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="1387" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
@@ -446,13 +647,6 @@
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="28" selection-start="402" selection-end="402" vertical-scroll-proportion="-0.8305648" vertical-offset="573" max-vertical-offset="874" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1391" selection-end="1417" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1995">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/base.js">
@@ -477,48 +671,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/sysadmin.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="41" selection-start="627" selection-end="627" vertical-scroll-proportion="0.14285715" vertical-offset="403" max-vertical-offset="874">
+        <state line="21" column="41" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="874">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/user.js">
+    <entry file="file://$PROJECT_DIR$/views/Bottom.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="24" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+        <state line="5" column="7" selection-start="121" selection-end="121" vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="209">
+          <folding>
+            <marker date="1392957270150" expanded="true" signature="37:104" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="49" selection-start="255" selection-end="255" vertical-scroll-proportion="-4.56" vertical-offset="0" max-vertical-offset="21831">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/edit.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="30" selection-start="1175" selection-end="1175" vertical-scroll-proportion="-4.321429" vertical-offset="335" max-vertical-offset="931">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/Top.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="32" selection-start="2466" selection-end="2466" vertical-scroll-proportion="2.5" vertical-offset="982" max-vertical-offset="1349">
+        <state line="62" column="44" selection-start="2918" selection-end="2918" vertical-scroll-proportion="0.5606936" vertical-offset="756" max-vertical-offset="1102">
           <folding>
-            <marker date="1392905606501" expanded="false" signature="1147:1183" placeholder="..." />
-            <marker date="1392905606501" expanded="true" signature="1184:1472" placeholder="..." />
-            <marker date="1392905606501" expanded="false" signature="1232:1243" placeholder="..." />
-            <marker date="1392905606501" expanded="true" signature="1244:1392" placeholder="..." />
-            <marker date="1392905606501" expanded="false" signature="1370:1380" placeholder="..." />
+            <element signature="e#2424#2731#0" expanded="true" />
+            <marker date="1392957270155" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1392957270155" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392957270155" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1392957270155" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392957270155" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="24" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/SVC/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/SVC/BaseSvc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="373" column="71" selection-start="14745" selection-end="14756" vertical-scroll-proportion="0.0" vertical-offset="1127" max-vertical-offset="2603">
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="14" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1539">
+          <folding>
+            <element signature="e#330#632#0" expanded="true" />
+            <element signature="e#379#547#0" expanded="true" />
+            <element signature="e#559#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/user/role.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="64" selection-start="2880" selection-end="2880" vertical-scroll-proportion="-35.964287" vertical-offset="0" max-vertical-offset="1748">
+        <state line="41" column="47" selection-start="1795" selection-end="1795" vertical-scroll-proportion="0.7665706" vertical-offset="513" max-vertical-offset="1425">
           <folding>
-            <element signature="tag#div#0" expanded="false" />
-            <element signature="tag#div#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/user/edit.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="17" selection-start="1817" selection-end="1817" vertical-scroll-proportion="1.7733333" vertical-offset="342" max-vertical-offset="1786">
-          <folding>
-            <element signature="e#344#361#0" expanded="true" />
-            <element signature="e#2835#3190#0" expanded="false" />
-            <element signature="e#3214#3426#0" expanded="false" />
+            <element signature="e#1346#1598#0" expanded="true" />
+            <element signature="e#1453#1591#0" expanded="true" />
+            <element signature="e#2010#3027#0" expanded="true" />
+            <element signature="e#2036#2682#0" expanded="true" />
+            <element signature="e#2700#3019#0" expanded="true" />
           </folding>
         </state>
       </provider>
