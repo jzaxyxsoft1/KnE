@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812d8ec0-48b4-4641-a975-e26f8f1cdb08" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/question/edit.ejs" afterPath="$PROJECT_DIR$/views/question/edit.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/SVC/ExamSvc.js" afterPath="$PROJECT_DIR$/node_modules/SVC/ExamSvc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/exam/detail.ejs" afterPath="$PROJECT_DIR$/views/exam/detail.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/exam.js" afterPath="$PROJECT_DIR$/controller/exam.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/knowledge.js" afterPath="$PROJECT_DIR$/controller/knowledge.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/trainning/p.ejs" afterPath="$PROJECT_DIR$/views/trainning/p.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/trainning.js" afterPath="$PROJECT_DIR$/controller/trainning.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="e413b1b8-5afa-4386-9cdc-06aa60671ec4" name="UnCommit" comment="" />
@@ -28,7 +30,103 @@
     <favorites_list name="KnE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="p.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/trainning/p.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="27" selection-start="820" selection-end="820" vertical-scroll-proportion="-14.25" vertical-offset="0" max-vertical-offset="513">
+              <folding>
+                <element signature="e#338#781#0" expanded="true" />
+                <element signature="e#462#667#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="p.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/exam/p.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="32" selection-start="518" selection-end="518" vertical-scroll-proportion="-9.5" vertical-offset="0" max-vertical-offset="570">
+              <folding>
+                <element signature="e#518#718#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.ejs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/exam/detail.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="121" column="90" selection-start="4178" selection-end="4178" vertical-scroll-proportion="0.5101289" vertical-offset="730" max-vertical-offset="1273">
+              <folding>
+                <element signature="e#3965#4086#0" expanded="true" />
+                <element signature="e#4178#4340#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exam.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/exam.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="22" selection-start="971" selection-end="974" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="817">
+              <folding>
+                <element signature="e#196#780#0" expanded="true" />
+                <element signature="e#561#604#0" expanded="true" />
+                <element signature="e#1024#1089#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExamSvc.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/SVC/ExamSvc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="4" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.0" vertical-offset="650" max-vertical-offset="2109">
+              <folding>
+                <element signature="e#168#1477#0" expanded="true" />
+                <element signature="e#207#1391#0" expanded="true" />
+                <element signature="e#240#511#0" expanded="true" />
+                <element signature="e#359#491#0" expanded="true" />
+                <element signature="e#550#871#0" expanded="true" />
+                <element signature="e#721#852#0" expanded="true" />
+                <element signature="e#910#1178#0" expanded="true" />
+                <element signature="e#1009#1158#0" expanded="true" />
+                <element signature="e#1234#1376#0" expanded="true" />
+                <element signature="e#1422#1470#0" expanded="true" />
+                <element signature="e#1483#1702#0" expanded="true" />
+                <element signature="e#1761#2425#0" expanded="true" />
+                <element signature="e#1854#2417#0" expanded="true" />
+                <element signature="e#2431#2528#0" expanded="true" />
+                <element signature="e#2585#4226#0" expanded="true" />
+                <element signature="e#2624#4132#0" expanded="true" />
+                <element signature="e#2657#2825#0" expanded="true" />
+                <element signature="e#2738#2805#0" expanded="true" />
+                <element signature="e#2863#3987#0" expanded="true" />
+                <element signature="e#2920#2981#0" expanded="true" />
+                <element signature="e#3122#3967#0" expanded="true" />
+                <element signature="e#3207#3902#0" expanded="true" />
+                <element signature="e#3274#3365#0" expanded="true" />
+                <element signature="e#3511#3596#0" expanded="true" />
+                <element signature="e#4026#4118#0" expanded="true" />
+                <element signature="e#4163#4210#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trainning.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/trainning.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="18" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
+              <folding>
+                <element signature="e#595#639#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -49,7 +147,6 @@
       <list>
         <option value="$PROJECT_DIR$/views/exam/p.ejs" />
         <option value="$PROJECT_DIR$/views/knowledge/detail.ejs" />
-        <option value="$PROJECT_DIR$/views/trainning/p.ejs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/main.ejs" />
         <option value="$PROJECT_DIR$/views/user/changepwd.ejs" />
@@ -67,7 +164,6 @@
         <option value="$PROJECT_DIR$/views/Top.ejs" />
         <option value="$PROJECT_DIR$/views/exam/define.ejs" />
         <option value="$PROJECT_DIR$/node_modules/SVC/BaseSvc.js" />
-        <option value="$PROJECT_DIR$/controller/trainning.js" />
         <option value="$PROJECT_DIR$/controller/file.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/knowledge/edit.ejs" />
@@ -75,11 +171,14 @@
         <option value="$PROJECT_DIR$/node_modules/SVC/index.js" />
         <option value="$PROJECT_DIR$/node_modules/SVC/TrainningSvc.js" />
         <option value="$PROJECT_DIR$/controller/question.js" />
-        <option value="$PROJECT_DIR$/node_modules/SVC/ExamSvc.js" />
         <option value="$PROJECT_DIR$/SvcTest.js" />
         <option value="$PROJECT_DIR$/controller/knowledge.js" />
-        <option value="$PROJECT_DIR$/controller/exam.js" />
         <option value="$PROJECT_DIR$/views/question/edit.ejs" />
+        <option value="$PROJECT_DIR$/controller/trainning.js" />
+        <option value="$PROJECT_DIR$/views/trainning/p.ejs" />
+        <option value="$PROJECT_DIR$/views/exam/detail.ejs" />
+        <option value="$PROJECT_DIR$/node_modules/SVC/ExamSvc.js" />
+        <option value="$PROJECT_DIR$/controller/exam.js" />
       </list>
     </option>
   </component>
@@ -143,7 +242,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -157,29 +256,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="question" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KnE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KnE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exam" />
+              <option name="myItemId" value="SVC" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -321,7 +402,11 @@
       <created>1393020442518</created>
       <updated>1393020442518</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;views/exam/define.ejs&#10;">
+      <created>1393020938264</created>
+      <updated>1393020938264</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -346,15 +431,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.49962825" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" sideWeight="0.49962825" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" sideWeight="0.49962825" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494382" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25055763" sideWeight="0.6078767" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32943144" sideWeight="0.50037175" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25055763" sideWeight="0.6078767" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.50037175" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3956229" sideWeight="0.50037456" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833335" sideWeight="0.49962825" order="2" side_tool="false" content_ui="tabs" />
@@ -381,7 +466,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Initial commit&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit&#10;" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;views/exam/define.ejs&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;views/exam/define.ejs&#10;" />
     <option name="UPDATE_GROUP_BY_PACKAGES" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -621,7 +707,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/sysadmin.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="41" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="874" />
+        <state line="21" column="41" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="874">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/user/role.ejs">
@@ -629,11 +717,6 @@
         <state line="99" column="5" selection-start="3385" selection-end="3385" vertical-scroll-proportion="0.0" vertical-offset="1323" max-vertical-offset="2261">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/trainning/p.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="55" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="475" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/main.ejs">
@@ -669,7 +752,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/sysadmin.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="41" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="874" />
+        <state line="21" column="41" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="874">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
@@ -844,13 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/trainning.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="471" selection-end="1569" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="121" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.0" vertical-offset="730" max-vertical-offset="2774">
@@ -987,38 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/SVC/ExamSvc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="0" selection-start="4163" selection-end="4163" vertical-scroll-proportion="-20.88" vertical-offset="1359" max-vertical-offset="2109">
-          <folding>
-            <element signature="e#168#1477#0" expanded="true" />
-            <element signature="e#207#1391#0" expanded="true" />
-            <element signature="e#240#511#0" expanded="true" />
-            <element signature="e#359#491#0" expanded="true" />
-            <element signature="e#550#871#0" expanded="true" />
-            <element signature="e#721#852#0" expanded="true" />
-            <element signature="e#910#1178#0" expanded="true" />
-            <element signature="e#1009#1158#0" expanded="true" />
-            <element signature="e#1234#1376#0" expanded="true" />
-            <element signature="e#1422#1470#0" expanded="true" />
-            <element signature="e#1483#1700#0" expanded="true" />
-            <element signature="e#1759#2423#0" expanded="true" />
-            <element signature="e#1852#2415#0" expanded="true" />
-            <element signature="e#2429#2526#0" expanded="true" />
-            <element signature="e#2622#4130#0" expanded="true" />
-            <element signature="e#2655#2823#0" expanded="true" />
-            <element signature="e#2736#2803#0" expanded="true" />
-            <element signature="e#2861#3985#0" expanded="true" />
-            <element signature="e#2918#2979#0" expanded="true" />
-            <element signature="e#3120#3965#0" expanded="true" />
-            <element signature="e#3205#3900#0" expanded="true" />
-            <element signature="e#3272#3363#0" expanded="true" />
-            <element signature="e#3509#3594#0" expanded="true" />
-            <element signature="e#4024#4116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/knowledge.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="63" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="665">
@@ -1026,15 +1072,6 @@
             <element signature="e#813#936#0" expanded="true" />
             <element signature="e#983#1085#0" expanded="true" />
             <element signature="e#1388#1477#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/exam.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="18" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="608">
-          <folding>
-            <element signature="e#561#604#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1070,6 +1107,89 @@
             <element signature="e#4452#4554#0" expanded="true" />
             <element signature="e#4622#5158#0" expanded="true" />
             <element signature="e#5002#5150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/trainning.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="18" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
+          <folding>
+            <element signature="e#595#639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/trainning/p.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="27" selection-start="820" selection-end="820" vertical-scroll-proportion="-14.25" vertical-offset="0" max-vertical-offset="513">
+          <folding>
+            <element signature="e#338#781#0" expanded="true" />
+            <element signature="e#462#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/exam/p.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="32" selection-start="518" selection-end="518" vertical-scroll-proportion="-9.5" vertical-offset="0" max-vertical-offset="570">
+          <folding>
+            <element signature="e#518#718#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/exam.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="22" selection-start="971" selection-end="974" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="817">
+          <folding>
+            <element signature="e#196#780#0" expanded="true" />
+            <element signature="e#561#604#0" expanded="true" />
+            <element signature="e#1024#1089#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/SVC/ExamSvc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="4" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.0" vertical-offset="650" max-vertical-offset="2109">
+          <folding>
+            <element signature="e#168#1477#0" expanded="true" />
+            <element signature="e#207#1391#0" expanded="true" />
+            <element signature="e#240#511#0" expanded="true" />
+            <element signature="e#359#491#0" expanded="true" />
+            <element signature="e#550#871#0" expanded="true" />
+            <element signature="e#721#852#0" expanded="true" />
+            <element signature="e#910#1178#0" expanded="true" />
+            <element signature="e#1009#1158#0" expanded="true" />
+            <element signature="e#1234#1376#0" expanded="true" />
+            <element signature="e#1422#1470#0" expanded="true" />
+            <element signature="e#1483#1702#0" expanded="true" />
+            <element signature="e#1761#2425#0" expanded="true" />
+            <element signature="e#1854#2417#0" expanded="true" />
+            <element signature="e#2431#2528#0" expanded="true" />
+            <element signature="e#2585#4226#0" expanded="true" />
+            <element signature="e#2624#4132#0" expanded="true" />
+            <element signature="e#2657#2825#0" expanded="true" />
+            <element signature="e#2738#2805#0" expanded="true" />
+            <element signature="e#2863#3987#0" expanded="true" />
+            <element signature="e#2920#2981#0" expanded="true" />
+            <element signature="e#3122#3967#0" expanded="true" />
+            <element signature="e#3207#3902#0" expanded="true" />
+            <element signature="e#3274#3365#0" expanded="true" />
+            <element signature="e#3511#3596#0" expanded="true" />
+            <element signature="e#4026#4118#0" expanded="true" />
+            <element signature="e#4163#4210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/exam/detail.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="90" selection-start="4178" selection-end="4178" vertical-scroll-proportion="0.5101289" vertical-offset="730" max-vertical-offset="1273">
+          <folding>
+            <element signature="e#3965#4086#0" expanded="true" />
+            <element signature="e#4178#4340#0" expanded="true" />
           </folding>
         </state>
       </provider>

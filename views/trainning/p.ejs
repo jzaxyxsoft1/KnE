@@ -1,20 +1,22 @@
-<%include ../Top.ejs%>
+<% include ../Top.ejs %>
 <div class="mt10 wp90 mc" data-bind="foreach:$data">
-    <a target="_self" data-bind="attr:{'src':Url}" class="bg-color-blue fg-color-white border-color-blueDark p20">
+    <a target="_self" data-bind="attr:{'src':Url,'class':cls}">
         <b data-bind="text:Name"></b>[<span data-bind="text:Define.Name"></span>]
     </a>
 </div>
 <script type="text/javascript">
-    $.getJSON('/trainning/get',{t:'getuserplan' },function(d){
-        if(d.length==0){
+    $.getJSON('/trainning/get', {t: 'getuserplan' }, function (d) {
+        if (d.length == 0) {
             alert('无应参加培训计划!');
             return;
         }
-        _.each(d,function (i){
-            i.Url='/knowledge/get?t=detail&id='+ i._id;
+        _.each(d, function (i) {
+            i.Url = '/knowledge/get?t=detail&id=' + i._id;
+            i.cls = i.flag == 1 ? 'bg-color-green' : 'bg-color-blue';
+            i.cls += 'fg-color-white border-color-blueDark p20';
         });
-        ko.applyBindings(d,document.getElementById('mainContainer'));
+        ko.applyBindings(d, document.getElementById('mainContainer'));
         $('#mainContainer').show()
     })
 </script>
-<%include ../Bottom.ejs%>
+<% include ../Bottom.ejs %>

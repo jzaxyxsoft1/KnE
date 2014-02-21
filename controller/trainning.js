@@ -4,6 +4,7 @@
 var db = require('DB').DB;
 var async = require('async');
 var _ = require('underscore');
+var TrainningSvc=require('Svc').TrainningSvc;
 exports.get = function (req, res) {
     var t = req.query['t'].toLowerCase();
     switch (t) {
@@ -14,34 +15,9 @@ exports.get = function (req, res) {
             res.render('trainning/plan.ejs',{m:true})
             break;
         case 'getuserplan':
-            async.parallel({
-                roles: function (cb) {
-                    db.Role.find({RoleIDs: req.currentUser._id}).toArray(cb)
-                },
-                plans: function (cb) {
-                    db.TrainningPlan.find({ETime: {$le: Date.ToDateTimeString()}}).toArray(cb)
-                }
-            }, function (e, result) {
-                var tps = _.filter(result.plans, function (i) {
-                    return _.any(i.RoleIDs, function (ri) {
-                        return _.any(result._id == ri);
-                    });
-                });
-                if (tps.length > 0) {
-                   var kdids = _.chain(tps)
-                       .map(function (i){return i.KnowledgDefineIDs})
-                       .union()
-                       .uniq()
-                       .value();
-                    db.Knowledge.find({"Define.Value":{$in:kdids}},{Define:1,Name:1}).toArray(function (e,ds){
-                        res.json(ds);
-                    })
-                }
-                else {
-                    res.json([]);
-                }
-            });
-
+            TrainningSvc.getUserTrainningKnowledges(req.currentUser._id, function(e,ds){
+                res.json(ds)
+            })
             break;
         case 'planknowledgedefines':
             var id= req.query['id'];

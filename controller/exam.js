@@ -31,11 +31,10 @@ exports.post=function (req,res){
     switch (t){
         case 'saveexamresult':
             var obj= JSON.parse(req.body['obj']);
-            obj._id='';
-            obj.CreateTime=Date.ToDateTimeString(null,true);
-            db.ExamLog.insert(obj,function (e,ds){
-                res.json({msg:e==null,error:e});
+            ExamSvc.log(req.currentUser,obj.ExamID,obj.Reault,function(e){
+                res.json({msg:e ==null,error:e});
             })
-            brea;
+
+            break;
     }
 }

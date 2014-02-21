@@ -117,7 +117,8 @@
 
         });
         var rt = Math.round(df / zf * 100, 1);
-        var rs = {ExamID: examID, Owner: {Name: '<%=u.Name%>', Value: '<%=u._id%>'}, TotalScore: zf, Score: df, CorrectRate: rt};
+        var rs = {ExamID: examID, Owner: {Name: '<%=u.Name%>', _id: '<%=u._id%>'}, TotalScore: zf, Score: df,
+            CorrectRate: rt};
         $.post('/exam/post', {t: 'saveexamresult', obj: JSON.stringify(rs)}, function (d) {
             if (d.msg) {
                 ko.applyBindings(rs, document.getElementById('d_result'));
