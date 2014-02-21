@@ -1,34 +1,40 @@
 <% include ../Top.ejs %>
 <link rel="stylesheet" href="/treeview/jquery.treeview.css"/>
 <script src="/treeview/jquery.treeview.js"></script>
-<script src="/xheditor/xheditor-zh-cn.min.js"></script>
-<div class="hp97 oh fl pp1" id="d_list" style="width:20%">
+<script src="/ckeditor/ckeditor.js"></script>
+<div class="hp97 oh fl pp1" id="d_define" style="width:20%">
     <div>
         <strong>类别列表</strong>
     </div>
     <ul id="ul_tree" class="hp95 oya" data-bind="template:{name:'tmpl',foreach:$data}">
     </ul>
 </div>
-<div class="hp97 oh fr hide pp1" id="d_edit" style="width:75%">
-
-    <div class="editor-label">ID:</div>
-    <div class="editor-field"><span data-bind="text:_id"></span></div>
-    <div class="editor-label">名称</div>
-    <div class="editor-field"><input type="text" data-bind="value:Name"/></div>
-    <div class="editor-label">上级类别</div>
-    <div class="editor-field"><a data-bind="text:Parent.Name,click:function(){$('#d_prnt').dialog('open')
-        }"></a></div>
-    <fieldset>
-        <legend><strong>知识内容</strong></legend>
-        <textarea id="ta"></textarea>
-    </fieldset>
-    <div class="ac mc pt10">
-        <input type="button" value="保存" onclick="save()"/>
-        <!--ko if:$data._id()!=''-->
-        <input type="button" value="删除" onclick="del()"/>
-        <!--/ko-->
+<div class="hp97 oh fr pp1" id="d_r" style="width:75%">
+    <div class="wp100 hp100 oh hide" id="d_list">
+        <ul class="wp96 mc hp97 pp1" data-bind="foreach:$data">
+            <li style="line-height: 25px;"><a data-bind="text:Name,click:function(){edit($data._id())}"></a></li>
+        </ul>
     </div>
-
+    <div class="wp100 hp100 hide" id="d_edit">
+        <div class="editor-label">ID:</div>
+        <div class="editor-field"><span data-bind="text:_id"></span></div>
+        <div class="editor-label">名称</div>
+        <div class="editor-field"><input type="text" data-bind="value:Name"/></div>
+        <div class="editor-label">上级类别</div>
+        <div class="editor-field"><a data-bind="text:Define.Name,click:function(){$('#d_prnt').dialog('open')
+        }"></a></div>
+        <b class="hr"></b>
+        <fieldset>
+            <legend><strong>知识内容</strong></legend>
+            <textarea id="ta"></textarea>
+        </fieldset>
+        <div class="ac mc pt10">
+            <input type="button" value="保存" onclick="save()"/>
+            <!--ko if:$data._id()!=''-->
+            <input type="button" value="删除" onclick="del()"/>
+            <!--/ko-->
+        </div>
+    </div>
 </div>
 <div class="hide" id="d_prnt">
     <strong>类别列表</strong>
@@ -36,34 +42,40 @@
     </ul>
 </div>
 <script type="text/html" id="tmpl">
-    <li><a data-bind="text:Name,click:function(){dSlt($data._id(),$data.Name(),$data.ValuePath())}"></a>
-        <!--ko if:$data.items().length-->
+    <li><a data-bind="text:Name,click:function(){dSlt($data._id,$data.Name,$data.ValuePath)}"></a>
+        <!--ko if:$data.items.length-->
         <ul data-bind="template:{name:'tmpl',foreach:items}"></ul>
         <!--/ko-->
     </li>
 </script>
 <script type="text/html" id="tmpl1">
-    <li><a data-bind="text:Name,click:function(){pChg($data._id(),$data.Name(),$data.ValuePath())}"></a>
-        <!--ko if:$data.items().length-->
+    <li><a data-bind="text:Name,click:function(){pChg($data._id,$data.Name,$data.ValuePath)}"></a>
+        <!--ko if:$data.items.length-->
         <ul data-bind="template:{name:'tmpl1',foreach:items}"></ul>
         <!--/ko-->
     </li>
 </script>
 <script type="text/javascript">
-    addMenu(['<input type="button" value="" class="hide" id="bt_add" onclick="edit()">']);
+    addMenu(['<input type="button" value="" class="hide" id="bt_add" onclick="edit(0)">']);
     $('#d_prnt').dialog({modal: true, autoOpen: false, width: 400, height: WS.h - 50, title: '选择类别'});
-    var editor = $('#ta').editor({height: WS.h - 300});
+    var editor = CKEDITOR.replace('ta', {
+        filebrowserBrowseUrl: '/CkEditor/Browser',
+        filebrowserImageBrowseUrl: '/Files/SingleUploader?path=Uploadeds,projects'
+    });
+    editor.config.height = WS.h - 250;
     $(function () {
         $.getJSON('/base/getihi', {tp: 'BODefine', id: 'Knowledge'}, function (d) {
-            ko.applyBindings(d, document.getElementById('d_list'));
+            ko.applyBindings(d, document.getElementById('d_define'));
             ko.applyBindings(d, document.getElementById('d_prnt'));
             $('#ul_tree').treeview({persist: "location", collapsed: true, unique: true});
             $('#ul_tree1').treeview({persist: "location", collapsed: true, unique: true});
+            $('#mainContainer').show();
         });
     })
     function dSlt(id, name, vp) {
         GV.Define = {Name: name, Value: id};
         $('#bt_add').val('添加【' + name + '】下级知识').show();
+        bindList();
     }
     function pChg(id, name) {
         GV.mdl.Define.Name(name);
@@ -71,28 +83,97 @@
         $('#d_prnt').dialog('close');
     }
     function bindList() {
-        $.getJSON('/base/getobjs', {tp: '', query: {'Define.Value': GV.Define.Value}}, function (d) {
-            if (GV.list) { ko.mapping.fromJS(d, GV.list);}
-            else {
-                GV.list = ko.mapping.fromJS(d);
-                ko.applyBindings(GV.list, document.getElementById('d_list'));
+        $.getJSON('/base/getobjs', {tp: 'Knowledge', query: {'Define.Value': GV.Define.Value}}, function (d) {
+            if (d.length) {
+                if (GV.list) { ko.mapping.fromJS(d, GV.list);}
+                else {
+                    GV.list = ko.mapping.fromJS(d);
+                    ko.applyBindings(GV.list, document.getElementById('d_list'));
+                }
+                showPnl('d_list');
             }
-            showPnl('d_list');
+            else {
+                alert('无记录!');
+                $('#d_list').hide();
+                $('#d_edit').hide();
+            }
         });
     }
     function edit(id) {
-        async.waterfall([], function (e, d) {
-            if (GV.mdl) { ko.mapping.fromJS(d, GV.mdl);}
-            else {
-                GV.mdl = ko.mapping.fromJS(d);
-                ko.applyBindings(GV.mdl, document.getElementById('d_edit'));
-            }
-            $('#e_edit').show()
-        })
+        async.waterfall(
+                [
+                    function (cb) {
+                        if (id == 0) {
+                            cb(null, {base: {_id: '', Name: '', Define: GV.Define}, content: {_id: '', Content: ''}});
+                        }
+                        else {
+                            cb(null, null);
+                        }
+                    },
+                    function (o, cb) {
+                        if (o) {cb(null, o);}
+                        else {
+                            async.parallel(
+                                    {
+                                        base: function (pcb) {
+                                            $.getJSON('/base/getobj', {tp: 'Knowledge', query: {_id: id}},
+                                                      function (o) {pcb(null, o)});
+                                        },
+                                        content: function (pcb) {
+                                            $.getJSON('/base/getobj', {tp: 'KnowledgeContent',
+                                                query: {_id: id}, option: {Content: 1}}, function (cnt) {
+                                                var rr = cnt ? cnt : {_id: '', Content: ''}
+                                                pcb(null, rr);
+                                            });
+                                        }
+                                    }, function (e, result) {
+                                        cb(null, {base: result.base, content: result.content});
+                                    })
+                        }
+                    }
+                ],
+                function (e, o) {
+                    if (GV.mdl) { ko.mapping.fromJS(o.base, GV.mdl);}
+                    else {
+                        GV.mdl = ko.mapping.fromJS(o.base);
+                        ko.applyBindings(GV.mdl, document.getElementById('d_edit'));
+                    }
+                    o.content = o.content || {_id: GV.mdl._id(), Content: ''};
+                    editor.setData(o.content.Content);
+                    showPnl('d_edit');
+                })
     }
-    function save() {}
-    function del() {}
-    bindList();
-    $('#mainContainer').show();
+    function save() {
+        var m = ko.mapping.toJS(GV.mdl);
+        var s = '';
+        if (!m.Name) {s = '请输入名称!\r';}
+        var cnt = editor.getData();
+        if (!cnt) { s = s + '请输入内容!'}
+        if (s) {
+            alert(s);
+            return;
+        }
+        $.post('/knowledge/post',
+               {t: 'saveknowledge', k: JSON.stringify(m), c: JSON.stringify({_id: m.__id, Content: cnt})},
+               function (d) {
+                   alert(d.error || '保存成功!');
+                   if (d.msg) {
+                       GV.mdl._id(d.ID);
+                       bindList();
+                   }
+               })
+    }
+    function del() {
+        if (window.confirm('是否删除' + GV.mdl.Name() + '?')) {
+            $.getJSON('/knowledge/get', {t: 'delknowledge', id: GV.mdl._id()}, function (d) {
+                alert(d.error || '删除完成!');
+                if (d.msg) {
+                    bindList();
+                    showPnl('d_list');
+                }
+            });
+        }
+    }
+
 </script>
 <% include ../Bottom.ejs %>

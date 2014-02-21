@@ -8,10 +8,10 @@ exports.get = function (req, res) {
     var t = req.query['t'].toLowerCase();
     switch (t) {
         case 'p': //pad page
-            res.render('exam/p.ejs', {u: req.currentUser, isPad: true});
+            res.render('exam/p.ejs', {u: req.currentUser });
             break;
         case 'define': //考试定义
-            res.render('exam/define.ejs');
+            res.render('exam/define.ejs',{m:true});
             break;
         case 'userexams':
             async.waterfall([

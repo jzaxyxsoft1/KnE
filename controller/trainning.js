@@ -8,10 +8,10 @@ exports.get = function (req, res) {
     var t = req.query['t'].toLowerCase();
     switch (t) {
         case 'p': //pad page
-            res.render('trainning/p.ejs', {u: req.currentUser, isPad: true});
+            res.render('trainning/p.ejs', {u: req.currentUser });
             break;
         case 'plan': //计划
-            res.render('trainning/plan.ejs')
+            res.render('trainning/plan.ejs',{m:true})
             break;
         case 'getuserplan':
             async.parallel({

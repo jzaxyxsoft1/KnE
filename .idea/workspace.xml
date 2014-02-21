@@ -1,12 +1,287 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="812d8ec0-48b4-4641-a975-e26f8f1cdb08" name="Default" comment="Initial commit&#10;">
+    <list default="true" id="812d8ec0-48b4-4641-a975-e26f8f1cdb08" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/link/images/anchor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/angel_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/angry_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/images/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/showblocks/images/block_address.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/showblocks/images/block_blockquote.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/showblocks/images/block_div.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/showblocks/images/block_h1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/showblocks/images/block_h2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/showblocks/images/block_h3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/showblocks/images/block_h4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/showblocks/images/block_h5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/showblocks/images/block_h6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/showblocks/images/block_p.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/showblocks/images/block_pre.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/broken_heart.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/confused_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/cry_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/devil_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/embaressed_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/embarrassed_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/envelope.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/heart.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/forms/images/hiddenfield.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/magicline/images/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/kiss.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/lightbulb.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/images/mini.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/image/images/noimage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/omg_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/pagebreak/images/pagebreak.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/flash/images/placeholder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/iframe/images/placeholder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/regular_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/sad_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/shades_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/fakeobjects/images/spacer.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/teeth_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/templates/templates/images/template1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/templates/templates/images/template2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/templates/templates/images/template3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/thumbs_down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/thumbs_up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/tongue_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/tounge_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/images/wink_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/SVC/ExamSvc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/scayt/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/scayt/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SvcTest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/SVC/TrainningSvc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/about/dialogs/about.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/link/dialogs/anchor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/bn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/bs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/build-config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/forms/dialogs/button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/forms/dialogs/checkbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/ciframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/ckeditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/colordialog/dialogs/colordialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/contents.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/pastefromword/filter/default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/templates/templates/default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/dialog/dialogDefinition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/dialog_opera.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/div/dialogs/div.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_gecko.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/editor_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/en-au.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/en-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/find/dialogs/find.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/flash/dialogs/flash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/fo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/forms/dialogs/form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/gu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/forms/dialogs/hiddenfield.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/iframe/dialogs/iframe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/image/dialogs/image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/link/dialogs/link.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/liststyle/dialogs/liststyle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/mn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/scayt/dialogs/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/clipboard/dialogs/paste.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/preview/preview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/forms/dialogs/radio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/skins/moono/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/forms/dialogs/select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/smiley/dialogs/smiley.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/specialchar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/sr-latn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/styles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/table/dialogs/table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/tabletools/dialogs/tableCell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/templates/dialogs/templates.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/templates/dialogs/templates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/forms/dialogs/textarea.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/forms/dialogs/textfield.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/tmp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/scayt/dialogs/toolbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/wsc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/wsc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/wsc_ie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckeditor/lang/zh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/SVC/BaseSvc.js" afterPath="$PROJECT_DIR$/node_modules/SVC/BaseSvc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Top.ejs" afterPath="$PROJECT_DIR$/views/Top.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/admin.js" afterPath="$PROJECT_DIR$/controller/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/exam/define.ejs" afterPath="$PROJECT_DIR$/views/exam/define.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/knowledge/edit.ejs" afterPath="$PROJECT_DIR$/views/knowledge/edit.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/question/edit.ejs" afterPath="$PROJECT_DIR$/views/question/edit.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/exam.js" afterPath="$PROJECT_DIR$/controller/exam.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/file.js" afterPath="$PROJECT_DIR$/controller/file.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/SVC/index.js" afterPath="$PROJECT_DIR$/node_modules/SVC/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/knowledge.js" afterPath="$PROJECT_DIR$/controller/knowledge.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/question.js" afterPath="$PROJECT_DIR$/controller/question.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/trainning.js" afterPath="$PROJECT_DIR$/controller/trainning.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
+    <list id="e413b1b8-5afa-4386-9cdc-06aa60671ec4" name="UnCommit" comment="" />
     <ignored path="KnE.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,53 +303,158 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="define.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ExamSvc.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/node_modules/SVC/ExamSvc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="99" column="0" selection-start="4163" selection-end="4163" vertical-scroll-proportion="0.4045584" vertical-offset="1758" max-vertical-offset="2109">
+              <folding>
+                <element signature="e#168#1477#0" expanded="true" />
+                <element signature="e#207#1391#0" expanded="true" />
+                <element signature="e#240#511#0" expanded="true" />
+                <element signature="e#359#491#0" expanded="true" />
+                <element signature="e#550#871#0" expanded="true" />
+                <element signature="e#721#852#0" expanded="true" />
+                <element signature="e#910#1178#0" expanded="true" />
+                <element signature="e#1009#1158#0" expanded="true" />
+                <element signature="e#1234#1376#0" expanded="true" />
+                <element signature="e#1422#1470#0" expanded="true" />
+                <element signature="e#1483#1700#0" expanded="true" />
+                <element signature="e#1759#2423#0" expanded="true" />
+                <element signature="e#1852#2415#0" expanded="true" />
+                <element signature="e#2429#2526#0" expanded="true" />
+                <element signature="e#2622#4130#0" expanded="true" />
+                <element signature="e#2655#2823#0" expanded="true" />
+                <element signature="e#2736#2803#0" expanded="true" />
+                <element signature="e#2861#3985#0" expanded="true" />
+                <element signature="e#2918#2979#0" expanded="true" />
+                <element signature="e#3120#3965#0" expanded="true" />
+                <element signature="e#3205#3900#0" expanded="true" />
+                <element signature="e#3272#3363#0" expanded="true" />
+                <element signature="e#3509#3594#0" expanded="true" />
+                <element signature="e#4024#4116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrainningSvc.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/SVC/TrainningSvc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="1818" selection-end="1818" vertical-scroll-proportion="-4.68" vertical-offset="548" max-vertical-offset="2299">
+              <folding>
+                <element signature="e#421#1147#0" expanded="true" />
+                <element signature="e#727#1120#0" expanded="true" />
+                <element signature="e#1649#1815#0" expanded="true" />
+                <element signature="e#1979#2043#0" expanded="true" />
+                <element signature="e#2144#4410#0" expanded="true" />
+                <element signature="e#2182#2370#0" expanded="true" />
+                <element signature="e#2405#4394#0" expanded="true" />
+                <element signature="e#2691#4267#0" expanded="true" />
+                <element signature="e#2732#2876#0" expanded="true" />
+                <element signature="e#2923#4245#0" expanded="true" />
+                <element signature="e#2993#4212#0" expanded="true" />
+                <element signature="e#4302#4362#0" expanded="true" />
+                <element signature="n#!!block;n#getUserPlans#0" expanded="true" />
+                <element signature="e#4483#4807#0" expanded="true" />
+                <element signature="e#4518#4617#0" expanded="true" />
+                <element signature="e#4652#4797#0" expanded="true" />
+                <element signature="e#4838#5139#0" expanded="true" />
+                <element signature="e#4923#5098#0" expanded="true" />
+                <element signature="e#4979#5082#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mongoskin/node_modules/mongodb/lib/mongodb/db.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1598" column="76" selection-start="69755" selection-end="69755" vertical-scroll-proportion="0.0" vertical-offset="2611" max-vertical-offset="4788">
+              <folding>
+                <element signature="e#69755#72095#0" expanded="true" />
+                <element signature="e#71956#72002#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SvcTest.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SvcTest.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="146" column="25" selection-start="7247" selection-end="7247" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="3477">
+              <folding>
+                <element signature="e#441#1489#0" expanded="true" />
+                <element signature="e#1112#1337#0" expanded="true" />
+                <element signature="e#1523#2671#0" expanded="true" />
+                <element signature="e#1577#2538#0" expanded="true" />
+                <element signature="e#1779#1962#0" expanded="true" />
+                <element signature="e#2553#2656#0" expanded="true" />
+                <element signature="e#2705#5122#0" expanded="true" />
+                <element signature="e#2759#4989#0" expanded="true" />
+                <element signature="e#2940#3174#0" expanded="true" />
+                <element signature="e#3015#3147#0" expanded="true" />
+                <element signature="e#3215#3308#0" expanded="true" />
+                <element signature="e#3349#3756#0" expanded="true" />
+                <element signature="e#3450#3672#0" expanded="true" />
+                <element signature="e#3797#4335#0" expanded="true" />
+                <element signature="e#3993#4302#0" expanded="true" />
+                <element signature="e#4376#4967#0" expanded="true" />
+                <element signature="e#4675#4881#0" expanded="true" />
+                <element signature="e#5004#5107#0" expanded="true" />
+                <element signature="e#5158#5539#0" expanded="true" />
+                <element signature="e#5243#5524#0" expanded="true" />
+                <element signature="e#5573#6721#0" expanded="true" />
+                <element signature="e#5733#6706#0" expanded="true" />
+                <element signature="e#5795#6556#0" expanded="true" />
+                <element signature="e#5840#6188#0" expanded="true" />
+                <element signature="e#5941#6157#0" expanded="true" />
+                <element signature="e#6233#6530#0" expanded="true" />
+                <element signature="e#6332#6499#0" expanded="true" />
+                <element signature="e#6571#6686#0" expanded="true" />
+                <element signature="e#6755#6996#0" expanded="true" />
+                <element signature="e#6820#6980#0" expanded="true" />
+                <element signature="e#7315#8340#0" expanded="true" />
+                <element signature="e#7370#8183#0" expanded="true" />
+                <element signature="e#7411#7567#0" expanded="true" />
+                <element signature="e#7608#7859#0" expanded="true" />
+                <element signature="e#7685#7831#0" expanded="true" />
+                <element signature="e#7900#8161#0" expanded="true" />
+                <element signature="e#7990#8134#0" expanded="true" />
+                <element signature="e#8218#8325#0" expanded="true" />
+                <element signature="e#8365#8413#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="question.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/question.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="14" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
+              <folding>
+                <element signature="e#454#499#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="define.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/exam/define.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="21" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.24358974" vertical-offset="342" max-vertical-offset="1691">
+            <state line="76" column="90" selection-start="3362" selection-end="3368" vertical-scroll-proportion="-8.607142" vertical-offset="728" max-vertical-offset="1615">
               <folding>
-                <element signature="e#105#122#0" expanded="true" />
-                <element signature="e#391#408#0" expanded="true" />
-                <element signature="tag#div#1;tag#div#0" expanded="false" />
-                <element signature="tag#div#1" expanded="false" />
-                <element signature="e#1953#1970#0" expanded="true" />
-                <element signature="e#3120#3872#0" expanded="false" />
+                <element signature="e#3890#4177#0" expanded="true" />
+                <element signature="e#4210#4600#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trainning.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/trainning.js">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/SVC/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0" vertical-offset="753" max-vertical-offset="1273">
+            <state line="56" column="45" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/question/edit.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="17" selection-start="4915" selection-end="4915" vertical-scroll-proportion="-69.03571" vertical-offset="385" max-vertical-offset="2603">
-              <folding>
-                <marker date="1392968620984" expanded="true" signature="2473:2624" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Top.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/Top.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="45" selection-start="184" selection-end="196" vertical-scroll-proportion="-4.071429" vertical-offset="38" max-vertical-offset="1406">
-              <folding>
-                <marker date="1392968113530" expanded="false" signature="1106:1142" placeholder="..." />
-                <marker date="1392968113530" expanded="true" signature="1143:1431" placeholder="..." />
-                <marker date="1392968113530" expanded="false" signature="1191:1202" placeholder="..." />
-                <marker date="1392968113530" expanded="true" signature="1203:1351" placeholder="..." />
-                <marker date="1392968113530" expanded="false" signature="1329:1339" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -87,6 +467,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
@@ -97,22 +478,39 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/controller/admin.js" />
+        <option value="$PROJECT_DIR$/views/exam/p.ejs" />
+        <option value="$PROJECT_DIR$/views/knowledge/detail.ejs" />
+        <option value="$PROJECT_DIR$/views/trainning/p.ejs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/main.ejs" />
         <option value="$PROJECT_DIR$/views/user/changepwd.ejs" />
         <option value="$PROJECT_DIR$/controller/user.js" />
         <option value="$PROJECT_DIR$/views/sysadmin.ejs" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/mm.ejs" />
-        <option value="$PROJECT_DIR$/views/Top.ejs" />
         <option value="$PROJECT_DIR$/views/user/edit.ejs" />
+        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/views/user/role.ejs" />
+        <option value="$PROJECT_DIR$/controller/base.js" />
         <option value="$PROJECT_DIR$/views/trainning/plan.ejs" />
-        <option value="$PROJECT_DIR$/public/javascripts/comm.js" />
-        <option value="$PROJECT_DIR$/views/question/edit.ejs" />
-        <option value="$PROJECT_DIR$/controller/trainning.js" />
+        <option value="$PROJECT_DIR$/views/Bottom.ejs" />
+        <option value="$PROJECT_DIR$/views/knowledge/define.ejs" />
+        <option value="$PROJECT_DIR$/public/xheditor/xheditor-zh-cn.min.js" />
+        <option value="$PROJECT_DIR$/views/Top.ejs" />
         <option value="$PROJECT_DIR$/views/exam/define.ejs" />
+        <option value="$PROJECT_DIR$/node_modules/SVC/BaseSvc.js" />
+        <option value="$PROJECT_DIR$/controller/trainning.js" />
+        <option value="$PROJECT_DIR$/controller/exam.js" />
+        <option value="$PROJECT_DIR$/controller/file.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/controller/knowledge.js" />
+        <option value="$PROJECT_DIR$/views/knowledge/edit.ejs" />
+        <option value="$PROJECT_DIR$/controller/admin.js" />
+        <option value="$PROJECT_DIR$/views/question/edit.ejs" />
+        <option value="$PROJECT_DIR$/node_modules/SVC/index.js" />
+        <option value="$PROJECT_DIR$/node_modules/SVC/TrainningSvc.js" />
+        <option value="$PROJECT_DIR$/controller/question.js" />
+        <option value="$PROJECT_DIR$/node_modules/SVC/ExamSvc.js" />
+        <option value="$PROJECT_DIR$/SvcTest.js" />
       </list>
     </option>
   </component>
@@ -120,7 +518,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -133,7 +531,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -194,60 +592,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="trainning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KnE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KnE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="question" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KnE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KnE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="knowledge" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KnE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KnE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="exam" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -262,7 +606,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,25 +620,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KnE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KnE" />
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="SVC" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -320,16 +650,18 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editing.templates" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="editing.templates" />
     <property name="SearchEverywhereHistory" value="cb" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../PatterPlatform/views/Bottom.ejs" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Documents\GitHub\KnE\public" />
       <recent name="D:\NodeProjects\KnE\public" />
       <recent name="D:\NodeProjects\KnE\views" />
       <recent name="D:\NodeProjects\KnE\controller" />
@@ -338,128 +670,15 @@
       <recent name="D:\NodeProjects\KnE\views" />
     </key>
   </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/controller/base.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/controller/knowledge.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/SVC/BaseSvc.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/public/stylesheets/style.css</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/Bottom.ejs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/Top.ejs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/exam/define.ejs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/knowledge/define.ejs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/knowledge/edit.ejs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/views/user/edit.ejs</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
-  </component>
-  <component name="RunManager" selected="Node.js.app.js">
+  <component name="RunManager" selected="Node.js.SvcTest">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -470,23 +689,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -496,8 +707,15 @@
       <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="SvcTest" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="D:/nodejs/node" path-to-js-file="SvcTest.js" working-dir="$PROJECT_DIR$">
+      <browser start="false" url="" with-js-debugger="false" />
+      <RunnerSettings RunnerId="NodeJS.debug" />
+      <ConfigurationWrapper RunnerId="NodeJS.debug" />
+      <method />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.SvcTest" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -524,6 +742,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="812d8ec0-48b4-4641-a975-e26f8f1cdb08" name="Default" comment="" />
+      <changelist id="e413b1b8-5afa-4386-9cdc-06aa60671ec4" name="UnCommit" comment="" />
       <created>1392794804709</created>
       <updated>1392794804709</updated>
     </task>
@@ -536,12 +755,12 @@
       <updated>1392897399978</updated>
     </task>
     <task id="LOCAL-00003" summary="Initial commit&#10;">
-      <created>1392954711354</created>
-      <updated>1392954711354</updated>
+      <created>1392958217866</created>
+      <updated>1392958217866</updated>
     </task>
     <task id="LOCAL-00004" summary="Initial commit&#10;">
-      <created>1392967282473</created>
-      <updated>1392967282473</updated>
+      <created>1392968055256</created>
+      <updated>1392968055256</updated>
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
@@ -567,24 +786,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.49962825" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" sideWeight="0.49962825" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" sideWeight="0.49962825" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494382" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25093076" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5003723" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25055763" sideWeight="0.6078767" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32833335" sideWeight="0.50037175" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3956229" sideWeight="0.50037456" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.4996277" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833335" sideWeight="0.49962825" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833335" sideWeight="0.49962825" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989899" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -604,153 +823,727 @@
     </option>
     <MESSAGE value="Initial commit&#10;" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit&#10;" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/controller/knowledge.js</url>
+          <line>34</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="35" />
+      <option name="time" value="93" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controller/base.js">
+    <entry file="file://$PROJECT_DIR$/views/knowledge/edit.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="66" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.0" vertical-offset="665" max-vertical-offset="2299">
-          <folding />
+        <state line="93" column="24" selection-start="3905" selection-end="3905" vertical-scroll-proportion="0.0" vertical-offset="1767" max-vertical-offset="2622">
+          <folding>
+            <element signature="e#228#245#0" expanded="true" />
+            <element signature="e#440#457#0" expanded="true" />
+            <element signature="e#589#615#0" expanded="true" />
+            <element signature="e#2876#3246#0" expanded="true" />
+            <marker date="1392999708324" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392999708324" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/SVC/BaseSvc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="10" selection-start="998" selection-end="998" vertical-scroll-proportion="1.6121212" vertical-offset="171" max-vertical-offset="1387">
-          <folding />
+        <state line="725" column="30" selection-start="28543" selection-end="28543" vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="2546">
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+            <element signature="e#212#401#0" expanded="false" />
+            <element signature="e#441#590#0" expanded="false" />
+            <element signature="e#632#871#0" expanded="false" />
+            <element signature="e#718#755#0" expanded="false" />
+            <element signature="e#809#846#0" expanded="false" />
+            <element signature="e#872#980#0" expanded="false" />
+            <element signature="e#1023#1149#0" expanded="false" />
+            <element signature="e#1186#1320#0" expanded="false" />
+            <element signature="e#1353#1403#0" expanded="false" />
+            <element signature="e#1443#1567#0" expanded="false" />
+            <element signature="e#1599#1787#0" expanded="false" />
+            <element signature="e#1824#1985#0" expanded="false" />
+            <element signature="e#2014#2533#0" expanded="false" />
+            <element signature="e#2307#2350#0" expanded="false" />
+            <element signature="e#2457#2505#0" expanded="false" />
+            <element signature="e#2563#2599#0" expanded="false" />
+            <element signature="e#2640#2738#0" expanded="false" />
+            <element signature="e#2770#2853#0" expanded="false" />
+            <element signature="e#2876#2949#0" expanded="false" />
+            <element signature="e#2983#3210#0" expanded="false" />
+            <element signature="e#3238#3361#0" expanded="false" />
+            <element signature="e#3406#3512#0" expanded="false" />
+            <element signature="e#3536#3672#0" expanded="false" />
+            <element signature="e#3699#3821#0" expanded="false" />
+            <element signature="e#3847#4047#0" expanded="false" />
+            <element signature="e#4068#4177#0" expanded="false" />
+            <element signature="e#4206#4269#0" expanded="false" />
+            <element signature="e#4298#4460#0" expanded="false" />
+            <element signature="e#4518#16293#0" expanded="false" />
+            <element signature="e#5197#6054#0" expanded="false" />
+            <element signature="e#6096#8125#0" expanded="false" />
+            <element signature="e#6422#7411#0" expanded="false" />
+            <element signature="e#6479#6891#0" expanded="false" />
+            <element signature="e#6951#7373#0" expanded="false" />
+            <element signature="e#7432#7949#0" expanded="false" />
+            <element signature="e#8171#8394#0" expanded="false" />
+            <element signature="e#8443#8907#0" expanded="false" />
+            <element signature="e#8950#9267#0" expanded="false" />
+            <element signature="e#9310#9530#0" expanded="false" />
+            <element signature="e#9628#9798#0" expanded="false" />
+            <element signature="e#9845#16265#0" expanded="false" />
+            <element signature="e#9885#10963#0" expanded="false" />
+            <element signature="e#9988#10089#0" expanded="false" />
+            <element signature="e#10277#10788#0" expanded="false" />
+            <element signature="e#11004#14367#0" expanded="false" />
+            <element signature="e#11077#11162#0" expanded="false" />
+            <element signature="e#11223#11324#0" expanded="false" />
+            <element signature="e#11529#11622#0" expanded="false" />
+            <element signature="e#11725#12987#0" expanded="false" />
+            <element signature="e#11782#12465#0" expanded="false" />
+            <element signature="e#11940#12212#0" expanded="false" />
+            <element signature="e#12029#12161#0" expanded="false" />
+            <element signature="e#12527#12949#0" expanded="false" />
+            <element signature="e#13043#14192#0" expanded="false" />
+            <element signature="e#13165#13896#0" expanded="false" />
+            <element signature="e#13250#13385#0" expanded="false" />
+            <element signature="e#14413#14907#0" expanded="false" />
+            <element signature="e#14527#14759#0" expanded="false" />
+            <element signature="e#14956#15568#0" expanded="false" />
+            <element signature="e#15183#15282#0" expanded="false" />
+            <element signature="e#15399#15484#0" expanded="false" />
+            <element signature="e#15611#15992#0" expanded="false" />
+            <element signature="e#15712#15810#0" expanded="false" />
+            <element signature="e#16034#16247#0" expanded="false" />
+            <element signature="e#16299#16538#0" expanded="false" />
+            <element signature="e#16606#21836#0" expanded="false" />
+            <element signature="e#17191#18545#0" expanded="false" />
+            <element signature="e#17241#17319#0" expanded="false" />
+            <element signature="e#17376#17613#0" expanded="false" />
+            <element signature="e#17678#18220#0" expanded="false" />
+            <element signature="e#18283#18382#0" expanded="false" />
+            <element signature="e#18442#18520#0" expanded="false" />
+            <element signature="e#18564#21828#0" expanded="false" />
+            <element signature="e#18593#21751#0" expanded="false" />
+            <element signature="e#18651#19176#0" expanded="false" />
+            <element signature="e#18821#18975#0" expanded="false" />
+            <element signature="e#19229#21110#0" expanded="false" />
+            <element signature="e#19350#20709#0" expanded="false" />
+            <element signature="e#19427#20009#0" expanded="false" />
+            <element signature="e#19616#19794#0" expanded="false" />
+            <element signature="e#20091#20651#0" expanded="false" />
+            <element signature="e#20729#20910#0" expanded="false" />
+            <element signature="e#21171#21722#0" expanded="false" />
+            <element signature="e#21767#21816#0" expanded="false" />
+            <element signature="e#21842#21997#0" expanded="false" />
+            <element signature="e#22043#23667#0" expanded="false" />
+            <element signature="e#22517#23566#0" expanded="false" />
+            <element signature="e#22779#23335#0" expanded="false" />
+            <element signature="e#23673#23797#0" expanded="false" />
+            <element signature="e#23831#24049#0" expanded="false" />
+            <element signature="e#23907#23949#0" expanded="false" />
+            <element signature="e#23987#24023#0" expanded="false" />
+            <element signature="e#24055#24179#0" expanded="false" />
+            <element signature="e#24214#24284#0" expanded="false" />
+            <element signature="e#24290#24378#0" expanded="false" />
+            <element signature="e#24421#24473#0" expanded="false" />
+            <element signature="e#24479#24594#0" expanded="false" />
+            <element signature="e#24643#24826#0" expanded="false" />
+            <element signature="e#24735#24819#0" expanded="false" />
+            <element signature="e#24832#24998#0" expanded="false" />
+            <element signature="e#25049#25472#0" expanded="false" />
+            <element signature="e#25220#25270#0" expanded="false" />
+            <element signature="e#25478#25574#0" expanded="false" />
+            <element signature="e#25603#25836#0" expanded="false" />
+            <element signature="e#25697#25747#0" expanded="false" />
+            <element signature="e#25842#25943#0" expanded="false" />
+            <element signature="e#25973#26024#0" expanded="false" />
+            <element signature="e#26030#26216#0" expanded="false" />
+            <element signature="e#26270#26533#0" expanded="false" />
+            <element signature="e#26492#26525#0" expanded="false" />
+            <element signature="e#26539#26965#0" expanded="false" />
+            <element signature="e#27380#28327#0" expanded="false" />
+            <element signature="e#27428#27792#0" expanded="false" />
+            <element signature="e#27543#27668#0" expanded="false" />
+            <element signature="e#27829#28326#0" expanded="false" />
+            <element signature="e#28413#29203#0" expanded="false" />
+            <element signature="e#29115#29181#0" expanded="false" />
+            <element signature="e#29218#29277#0" expanded="false" />
+            <element signature="e#29305#29454#0" expanded="false" />
+            <element signature="e#29506#29585#0" expanded="false" />
+            <element signature="e#29591#29798#0" expanded="false" />
+            <element signature="e#29851#31886#0" expanded="false" />
+            <element signature="e#30072#31868#0" expanded="false" />
+            <element signature="e#30104#30185#0" expanded="false" />
+            <element signature="e#30230#30295#0" expanded="false" />
+            <element signature="e#30331#31037#0" expanded="false" />
+            <element signature="e#30460#30525#0" expanded="false" />
+            <element signature="e#30799#30961#0" expanded="false" />
+            <element signature="e#31073#31854#0" expanded="false" />
+            <element signature="e#31484#31552#0" expanded="false" />
+            <element signature="e#31775#31834#0" expanded="false" />
+            <element signature="e#31892#32134#0" expanded="false" />
+            <element signature="e#32197#40551#0" expanded="false" />
+            <element signature="e#32438#40533#0" expanded="false" />
+            <element signature="e#32482#32597#0" expanded="false" />
+            <element signature="e#32654#32901#0" expanded="false" />
+            <element signature="e#32778#32869#0" expanded="false" />
+            <element signature="e#32950#40507#0" expanded="false" />
+            <element signature="e#33066#40130#0" expanded="false" />
+            <element signature="e#33147#36702#0" expanded="false" />
+            <element signature="e#33932#34130#0" expanded="false" />
+            <element signature="e#34221#34396#0" expanded="false" />
+            <element signature="e#34972#35129#0" expanded="false" />
+            <element signature="e#35157#36120#0" expanded="false" />
+            <element signature="e#35537#35740#0" expanded="false" />
+            <element signature="e#36783#38329#0" expanded="false" />
+            <element signature="e#36972#38147#0" expanded="false" />
+            <element signature="e#37260#37807#0" expanded="false" />
+            <element signature="e#38403#40081#0" expanded="false" />
+            <element signature="e#38653#39808#0" expanded="false" />
+            <element signature="e#38944#39190#0" expanded="false" />
+            <element signature="e#40146#40475#0" expanded="false" />
+            <element signature="e#40557#40771#0" expanded="false" />
+            <element signature="e#40826#48588#0" expanded="false" />
+            <element signature="e#41187#48475#0" expanded="false" />
+            <element signature="e#41232#46005#0" expanded="false" />
+            <element signature="e#41282#45635#0" expanded="false" />
+            <element signature="e#41351#42732#0" expanded="false" />
+            <element signature="e#41573#42533#0" expanded="false" />
+            <element signature="e#41672#41820#0" expanded="false" />
+            <element signature="e#42317#42469#0" expanded="false" />
+            <element signature="e#42820#45585#0" expanded="false" />
+            <element signature="e#43177#44282#0" expanded="false" />
+            <element signature="e#43309#43480#0" expanded="false" />
+            <element signature="e#43714#43896#0" expanded="false" />
+            <element signature="e#44297#44459#0" expanded="false" />
+            <element signature="e#44749#44925#0" expanded="false" />
+            <element signature="e#45654#45973#0" expanded="false" />
+            <element signature="e#46060#46737#0" expanded="false" />
+            <element signature="e#46289#46386#0" expanded="false" />
+            <element signature="e#46574#46671#0" expanded="false" />
+            <element signature="e#46792#47648#0" expanded="false" />
+            <element signature="e#47033#47228#0" expanded="false" />
+            <element signature="e#47355#47452#0" expanded="false" />
+            <element signature="e#47703#48449#0" expanded="false" />
+            <element signature="e#47867#48288#0" expanded="false" />
+            <element signature="e#47965#48075#0" expanded="false" />
+            <element signature="e#48518#48580#0" expanded="false" />
+            <element signature="e#48594#48711#0" expanded="false" />
+            <element signature="e#48754#48803#0" expanded="false" />
+            <element signature="e#48809#48892#0" expanded="false" />
+            <element signature="e#48925#49409#0" expanded="false" />
+            <element signature="e#49320#49335#0" expanded="false" />
+            <element signature="e#49415#49438#0" expanded="false" />
+            <element signature="e#49576#49920#0" expanded="false" />
+            <element signature="e#50011#50855#0" expanded="false" />
+            <element signature="e#50165#50847#0" expanded="false" />
+            <element signature="e#50247#50831#0" expanded="false" />
+            <element signature="e#50861#50884#0" expanded="false" />
+            <element signature="e#50907#50969#0" expanded="false" />
+            <element signature="e#51014#51580#0" expanded="false" />
+            <element signature="e#51056#51528#0" expanded="false" />
+            <element signature="e#51597#51765#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/sysadmin.ejs">
+    <entry file="file://$PROJECT_DIR$/node_modules/DB/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="41" selection-start="627" selection-end="627" vertical-scroll-proportion="-0.013245033" vertical-offset="403" max-vertical-offset="874">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/mm.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="6" selection-start="2420" selection-end="2420" vertical-scroll-proportion="-1.321192" vertical-offset="2204" max-vertical-offset="2527">
+        <state line="17" column="6" selection-start="591" selection-end="600" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="779">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/user/edit.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="17" selection-start="1817" selection-end="1817" vertical-scroll-proportion="1.7615894" vertical-offset="342" max-vertical-offset="2090">
+        <state line="4" column="65" selection-start="263" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/knowledge/define.ejs">
+    <entry file="file://$PROJECT_DIR$/views/sysadmin.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="58" selection-end="58" vertical-scroll-proportion="0.12582782" vertical-offset="0" max-vertical-offset="302">
+        <state line="21" column="41" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="874" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/role.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="5" selection-start="3385" selection-end="3385" vertical-scroll-proportion="0.0" vertical-offset="1323" max-vertical-offset="2261">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/knowledge/edit.ejs">
+    <entry file="file://$PROJECT_DIR$/views/trainning/p.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+        <state line="13" column="55" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="475" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="30" selection-start="0" selection-end="4357" vertical-scroll-proportion="-4.75" vertical-offset="2185" max-vertical-offset="3230">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/exam.js">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.34545454" vertical-offset="114" max-vertical-offset="1216">
+        <state line="16" column="12" selection-start="378" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/mm.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="6" selection-start="2420" selection-end="2420" vertical-scroll-proportion="0.0" vertical-offset="1691" max-vertical-offset="2527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="28" selection-start="402" selection-end="402" vertical-scroll-proportion="-0.8305648" vertical-offset="573" max-vertical-offset="874" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/changepwd.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="33" selection-start="701" selection-end="701" vertical-scroll-proportion="0.9033333" vertical-offset="71" max-vertical-offset="627" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sysadmin.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="41" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="874" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="-0.76" vertical-offset="0" max-vertical-offset="21774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="24" selection-start="1055" selection-end="1055" vertical-scroll-proportion="1.064" vertical-offset="0" max-vertical-offset="608">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/user/role.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="190" selection-end="266" vertical-scroll-proportion="-1.9642857" vertical-offset="21" max-vertical-offset="2033">
+        <state line="59" column="22" selection-start="2295" selection-end="2295" vertical-scroll-proportion="-8.821428" vertical-offset="798" max-vertical-offset="1824">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/edit.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="44" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.23919308" vertical-offset="335" max-vertical-offset="1121">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Bottom.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="7" selection-start="123" selection-end="123" vertical-scroll-proportion="0.2923077" vertical-offset="0" max-vertical-offset="325" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/comm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="5" selection-start="5558" selection-end="5558" vertical-scroll-proportion="0.34530386" vertical-offset="559" max-vertical-offset="1178">
+          <folding>
+            <element signature="e#5599#5810#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/knowledge/define.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="57" selection-start="2271" selection-end="2324" vertical-scroll-proportion="0.389049" vertical-offset="511" max-vertical-offset="2299">
+          <folding>
+            <element signature="e#180#197#0" expanded="false" />
+            <element signature="e#400#417#0" expanded="false" />
+            <element signature="e#439#459#0" expanded="false" />
+            <element signature="e#2381#2600#0" expanded="false" />
+            <element signature="e#2624#2703#0" expanded="false" />
+            <element signature="e#2728#3308#0" expanded="false" />
+            <element signature="e#2812#3300#0" expanded="false" />
+            <element signature="e#3341#4299#0" expanded="false" />
+            <element signature="e#3384#3960#0" expanded="false" />
+            <element signature="e#3420#3595#0" expanded="false" />
+            <element signature="e#3634#3942#0" expanded="false" />
+            <element signature="e#3816#3892#0" expanded="false" />
+            <element signature="e#3978#4291#0" expanded="false" />
+            <element signature="e#4320#4738#0" expanded="false" />
+            <element signature="e#4579#4730#0" expanded="false" />
+            <element signature="e#4758#5104#0" expanded="false" />
+            <element signature="e#4909#5086#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12198" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/trainning/plan.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="15" selection-start="5319" selection-end="5319" vertical-scroll-proportion="-16.5" vertical-offset="1191" max-vertical-offset="1805">
+        <state line="117" column="20" selection-start="4262" selection-end="4262" vertical-scroll-proportion="0.5606936" vertical-offset="1725" max-vertical-offset="2698">
           <folding>
-            <element signature="e#66#84#0" expanded="true" />
-            <element signature="e#351#368#0" expanded="true" />
-            <element signature="e#977#995#0" expanded="true" />
-            <element signature="e#1166#1184#0" expanded="true" />
-            <element signature="e#1529#1547#0" expanded="true" />
+            <element signature="e#2265#2817#0" expanded="false" />
             <element signature="e#2291#2742#0" expanded="false" />
-            <element signature="e#2844#3212#0" expanded="false" />
+            <element signature="e#2319#2505#0" expanded="false" />
+            <element signature="e#2533#2732#0" expanded="false" />
+            <element signature="e#2757#2808#0" expanded="false" />
             <element signature="e#3235#4241#0" expanded="false" />
+            <element signature="e#3261#3866#0" expanded="false" />
+            <element signature="e#3289#3528#0" expanded="false" />
+            <element signature="e#3559#3856#0" expanded="false" />
+            <element signature="e#3761#3822#0" expanded="false" />
+            <element signature="e#3884#4233#0" expanded="false" />
+            <element signature="e#4754#4925#0" expanded="false" />
             <element signature="e#4962#5303#0" expanded="false" />
-            <marker date="1392965551619" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1392965551619" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1392965551619" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1392965551619" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="e#5112#5286#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="66" selection-start="1490" selection-end="1490" vertical-scroll-proportion="0.8636364" vertical-offset="152" max-vertical-offset="1007">
+          <folding>
+            <element signature="e#586#1072#0" expanded="false" />
+            <element signature="e#1490#1746#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/ckeditor/lang/af.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2755" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/ckeditor/ckeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="11" selection-start="156" selection-end="156" vertical-scroll-proportion="0.20320855" vertical-offset="0" max-vertical-offset="5415">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#156#479600#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/DB/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="6" selection-start="591" selection-end="600" vertical-scroll-proportion="0.050531916" vertical-offset="171" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/file.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="7" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="931">
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+            <element signature="e#674#837#0" expanded="false" />
+            <element signature="e#875#1550#0" expanded="false" />
+            <element signature="e#1383#1546#0" expanded="false" />
+            <element signature="e#1436#1538#0" expanded="false" />
+            <element signature="n#!!block;n#checkPath#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="42" selection-start="1632" selection-end="1632" vertical-scroll-proportion="0.18351063" vertical-offset="710" max-vertical-offset="1121">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/Top.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="45" selection-start="184" selection-end="196" vertical-scroll-proportion="-4.071429" vertical-offset="38" max-vertical-offset="1406">
+        <state line="12" column="72" selection-start="553" selection-end="553" vertical-scroll-proportion="-8.142858" vertical-offset="0" max-vertical-offset="1140">
           <folding>
-            <marker date="1392968113530" expanded="false" signature="1106:1142" placeholder="..." />
-            <marker date="1392968113530" expanded="true" signature="1143:1431" placeholder="..." />
-            <marker date="1392968113530" expanded="false" signature="1191:1202" placeholder="..." />
-            <marker date="1392968113530" expanded="true" signature="1203:1351" placeholder="..." />
-            <marker date="1392968113530" expanded="false" signature="1329:1339" placeholder="..." />
+            <marker date="1392971664586" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1392971664586" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392971664586" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1392971664586" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392971664586" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/knowledge/edit.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="26" selection-start="1760" selection-end="2323" vertical-scroll-proportion="0.1637931" vertical-offset="798" max-vertical-offset="1463">
+          <folding>
+            <element signature="e#228#245#0" expanded="true" />
+            <element signature="e#440#457#0" expanded="true" />
+            <element signature="e#589#615#0" expanded="true" />
+            <element signature="e#2876#3246#0" expanded="true" />
+            <marker date="1392999708324" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392999708324" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/exam.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="18" selection-start="469" selection-end="1373" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="817">
+          <folding>
+            <element signature="e#517#767#0" expanded="false" />
+            <element signature="e#805#1131#0" expanded="false" />
+            <element signature="e#1319#1372#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/question/edit.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="17" selection-start="4915" selection-end="4915" vertical-scroll-proportion="-69.03571" vertical-offset="385" max-vertical-offset="2603">
+        <state line="183" column="53" selection-start="7658" selection-end="7669" vertical-scroll-proportion="-124.17857" vertical-offset="0" max-vertical-offset="3781">
           <folding>
-            <marker date="1392968620984" expanded="true" signature="2473:2624" placeholder="..." />
+            <element signature="e#228#245#0" expanded="true" />
+            <element signature="e#442#459#0" expanded="true" />
+            <element signature="e#539#565#0" expanded="true" />
+            <element signature="e#649#668#0" expanded="true" />
+            <element signature="e#1256#1283#0" expanded="true" />
+            <element signature="e#1538#1564#0" expanded="true" />
+            <element signature="e#1605#1642#0" expanded="true" />
+            <element signature="e#3549#4011#0" expanded="true" />
+            <element signature="e#3633#4003#0" expanded="true" />
+            <element signature="e#4053#4194#0" expanded="true" />
+            <element signature="e#4268#4410#0" expanded="true" />
+            <element signature="e#4432#4531#0" expanded="true" />
+            <element signature="e#4480#4523#0" expanded="true" />
+            <element signature="e#4564#4713#0" expanded="true" />
+            <element signature="e#4738#5538#0" expanded="true" />
+            <element signature="e#4848#5531#0" expanded="true" />
+            <element signature="e#5087#5242#0" expanded="true" />
+            <element signature="e#5561#6792#0" expanded="true" />
+            <element signature="e#5604#6362#0" expanded="true" />
+            <element signature="e#5641#5941#0" expanded="true" />
+            <element signature="e#5981#6343#0" expanded="true" />
+            <element signature="e#6217#6294#0" expanded="true" />
+            <element signature="e#6380#6784#0" expanded="true" />
+            <element signature="e#6813#6901#0" expanded="true" />
+            <element signature="e#6922#7556#0" expanded="true" />
+            <element signature="e#7397#7548#0" expanded="true" />
+            <element signature="e#7699#7834#0" expanded="true" />
+            <marker date="1393002811424" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1393002811424" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1393002811424" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/knowledge.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/trainning.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0" vertical-offset="753" max-vertical-offset="1273">
+        <state line="23" column="23" selection-start="471" selection-end="1569" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="570">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/comm.js">
+    <entry file="file://$PROJECT_DIR$/controller/admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="9" selection-start="2992" selection-end="2992" vertical-scroll-proportion="0.33150685" vertical-offset="924" max-vertical-offset="3553">
-          <folding />
+        <state line="34" column="121" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.0" vertical-offset="730" max-vertical-offset="2774">
+          <folding>
+            <element signature="e#376#857#0" expanded="false" />
+            <element signature="e#445#834#0" expanded="false" />
+            <element signature="e#508#717#0" expanded="false" />
+            <element signature="e#732#806#0" expanded="false" />
+            <element signature="e#905#1461#0" expanded="false" />
+            <element signature="e#993#1438#0" expanded="false" />
+            <element signature="e#1057#1405#0" expanded="false" />
+            <element signature="e#2015#2547#0" expanded="false" />
+            <element signature="e#2085#2523#0" expanded="false" />
+            <element signature="e#2148#2490#0" expanded="false" />
+            <element signature="e#2588#2644#0" expanded="false" />
+            <element signature="e#4153#4217#0" expanded="false" />
+            <element signature="e#4311#4376#0" expanded="false" />
+            <element signature="e#4563#5003#0" expanded="false" />
+            <element signature="e#4656#4987#0" expanded="false" />
+            <element signature="e#4918#4945#0" expanded="false" />
+            <element signature="e#5080#5277#0" expanded="false" />
+            <element signature="e#5295#5337#0" expanded="false" />
+            <element signature="n#!!block;n#setP#0" expanded="false" />
+            <element signature="e#5596#5646#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/underscore/underscore.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/SVC/BaseSvc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="2" selection-start="5947" selection-end="5947" vertical-scroll-proportion="-0.44931507" vertical-offset="3299" max-vertical-offset="24301">
-          <folding />
+        <state line="657" column="12" selection-start="25839" selection-end="25943" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="2109">
+          <folding>
+            <element signature="e#27040#29299#0" expanded="false" />
+            <element signature="e#28359#29292#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/exam/define.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="21" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.24358974" vertical-offset="342" max-vertical-offset="1691">
+        <state line="76" column="90" selection-start="3362" selection-end="3368" vertical-scroll-proportion="-8.607142" vertical-offset="728" max-vertical-offset="1615">
           <folding>
-            <element signature="e#105#122#0" expanded="true" />
-            <element signature="e#391#408#0" expanded="true" />
-            <element signature="tag#div#1;tag#div#0" expanded="false" />
-            <element signature="tag#div#1" expanded="false" />
-            <element signature="e#1953#1970#0" expanded="true" />
-            <element signature="e#3120#3872#0" expanded="false" />
+            <element signature="e#3890#4177#0" expanded="true" />
+            <element signature="e#4210#4600#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/SVC/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="45" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoskin/node_modules/mongodb/lib/mongodb/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1598" column="76" selection-start="69755" selection-end="69755" vertical-scroll-proportion="0.0" vertical-offset="2611" max-vertical-offset="4788">
+          <folding>
+            <element signature="e#69755#72095#0" expanded="true" />
+            <element signature="e#71956#72002#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/underscore/underscore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="19" selection-start="3007" selection-end="3007" vertical-scroll-proportion="0.10106383" vertical-offset="0" max-vertical-offset="9576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/SVC/TrainningSvc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1818" selection-end="1818" vertical-scroll-proportion="-4.68" vertical-offset="548" max-vertical-offset="2299">
+          <folding>
+            <element signature="e#421#1147#0" expanded="true" />
+            <element signature="e#727#1120#0" expanded="true" />
+            <element signature="e#1649#1815#0" expanded="true" />
+            <element signature="e#1979#2043#0" expanded="true" />
+            <element signature="e#2144#4410#0" expanded="true" />
+            <element signature="e#2182#2370#0" expanded="true" />
+            <element signature="e#2405#4394#0" expanded="true" />
+            <element signature="e#2691#4267#0" expanded="true" />
+            <element signature="e#2732#2876#0" expanded="true" />
+            <element signature="e#2923#4245#0" expanded="true" />
+            <element signature="e#2993#4212#0" expanded="true" />
+            <element signature="e#4302#4362#0" expanded="true" />
+            <element signature="n#!!block;n#getUserPlans#0" expanded="true" />
+            <element signature="e#4483#4807#0" expanded="true" />
+            <element signature="e#4518#4617#0" expanded="true" />
+            <element signature="e#4652#4797#0" expanded="true" />
+            <element signature="e#4838#5139#0" expanded="true" />
+            <element signature="e#4923#5098#0" expanded="true" />
+            <element signature="e#4979#5082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/question.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="14" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
+          <folding>
+            <element signature="e#454#499#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SvcTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="25" selection-start="7247" selection-end="7247" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="3477">
+          <folding>
+            <element signature="e#441#1489#0" expanded="true" />
+            <element signature="e#1112#1337#0" expanded="true" />
+            <element signature="e#1523#2671#0" expanded="true" />
+            <element signature="e#1577#2538#0" expanded="true" />
+            <element signature="e#1779#1962#0" expanded="true" />
+            <element signature="e#2553#2656#0" expanded="true" />
+            <element signature="e#2705#5122#0" expanded="true" />
+            <element signature="e#2759#4989#0" expanded="true" />
+            <element signature="e#2940#3174#0" expanded="true" />
+            <element signature="e#3015#3147#0" expanded="true" />
+            <element signature="e#3215#3308#0" expanded="true" />
+            <element signature="e#3349#3756#0" expanded="true" />
+            <element signature="e#3450#3672#0" expanded="true" />
+            <element signature="e#3797#4335#0" expanded="true" />
+            <element signature="e#3993#4302#0" expanded="true" />
+            <element signature="e#4376#4967#0" expanded="true" />
+            <element signature="e#4675#4881#0" expanded="true" />
+            <element signature="e#5004#5107#0" expanded="true" />
+            <element signature="e#5158#5539#0" expanded="true" />
+            <element signature="e#5243#5524#0" expanded="true" />
+            <element signature="e#5573#6721#0" expanded="true" />
+            <element signature="e#5733#6706#0" expanded="true" />
+            <element signature="e#5795#6556#0" expanded="true" />
+            <element signature="e#5840#6188#0" expanded="true" />
+            <element signature="e#5941#6157#0" expanded="true" />
+            <element signature="e#6233#6530#0" expanded="true" />
+            <element signature="e#6332#6499#0" expanded="true" />
+            <element signature="e#6571#6686#0" expanded="true" />
+            <element signature="e#6755#6996#0" expanded="true" />
+            <element signature="e#6820#6980#0" expanded="true" />
+            <element signature="e#7315#8340#0" expanded="true" />
+            <element signature="e#7370#8183#0" expanded="true" />
+            <element signature="e#7411#7567#0" expanded="true" />
+            <element signature="e#7608#7859#0" expanded="true" />
+            <element signature="e#7685#7831#0" expanded="true" />
+            <element signature="e#7900#8161#0" expanded="true" />
+            <element signature="e#7990#8134#0" expanded="true" />
+            <element signature="e#8218#8325#0" expanded="true" />
+            <element signature="e#8365#8413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/SVC/ExamSvc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="0" selection-start="4163" selection-end="4163" vertical-scroll-proportion="0.4045584" vertical-offset="1758" max-vertical-offset="2109">
+          <folding>
+            <element signature="e#168#1477#0" expanded="true" />
+            <element signature="e#207#1391#0" expanded="true" />
+            <element signature="e#240#511#0" expanded="true" />
+            <element signature="e#359#491#0" expanded="true" />
+            <element signature="e#550#871#0" expanded="true" />
+            <element signature="e#721#852#0" expanded="true" />
+            <element signature="e#910#1178#0" expanded="true" />
+            <element signature="e#1009#1158#0" expanded="true" />
+            <element signature="e#1234#1376#0" expanded="true" />
+            <element signature="e#1422#1470#0" expanded="true" />
+            <element signature="e#1483#1700#0" expanded="true" />
+            <element signature="e#1759#2423#0" expanded="true" />
+            <element signature="e#1852#2415#0" expanded="true" />
+            <element signature="e#2429#2526#0" expanded="true" />
+            <element signature="e#2622#4130#0" expanded="true" />
+            <element signature="e#2655#2823#0" expanded="true" />
+            <element signature="e#2736#2803#0" expanded="true" />
+            <element signature="e#2861#3985#0" expanded="true" />
+            <element signature="e#2918#2979#0" expanded="true" />
+            <element signature="e#3120#3965#0" expanded="true" />
+            <element signature="e#3205#3900#0" expanded="true" />
+            <element signature="e#3272#3363#0" expanded="true" />
+            <element signature="e#3509#3594#0" expanded="true" />
+            <element signature="e#4024#4116#0" expanded="true" />
           </folding>
         </state>
       </provider>
