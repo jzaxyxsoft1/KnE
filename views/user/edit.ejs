@@ -2,7 +2,7 @@
 <div class="fl hp98 pp1 oh" id="d_list" style="width:20%">
     <b>员工列表</b><a href="javascript:edit(0)" class="ml10">添加员工</a>
     <ul class="hp95 oya" data-bind="foreach:$data">
-        <li><a data-bind="click:function(){edit($data._id()),text:Name}"></a></li>
+        <li><a data-bind="click:function(){edit($data._id())},text:Name"></a></li>
     </ul>
 </div>
 <div class="fr hp98 pp1 hide" id="d_edit" style="width:75%">
@@ -39,7 +39,7 @@
                 if (id == 0) {
                     cb(null, {_id: '', Name: '', RoleIDs: [], Pwd: '8888'});
                 }
-                else cb(null);
+                else cb(null,null);
             },
             function (o, cb) {
                 if (o) {

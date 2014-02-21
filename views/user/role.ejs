@@ -30,9 +30,9 @@
 </div>
 <script type="text/javascript">
     $(function () {
-        $('#mainContainer').hide();
-        $.getJSON('/base/getobjs', {tp: 'User', query: {}, option: {Name: 1}}, function (d) {
+        $.getJSON('/base/getobjs', {tp: 'OrgUser', query: {}, option: {Name: 1}}, function (d) {
             GV.Users = d;
+
             $('#mainContainer').show();
         })
     })
@@ -43,7 +43,7 @@
             }
             else {
                 GV.list = ko.mapping.fromJS(ds);
-                ko.applyBindings(GV.list, document.getexploded('d_list'));
+                ko.applyBindings(GV.list, document.getElementById('d_list'));
             }
         });
     }
@@ -78,7 +78,7 @@
             }
             else {
                 GV.mdl = ko.mapping.fromJS(d);
-                ko.applyBindings(GV.mdl, document.getexploded('d_edit'));
+                ko.applyBindings(GV.mdl, document.getElementById('d_edit'));
             }
             $('#d_edit').show();
         });
