@@ -36,11 +36,10 @@
 
 <header style=" height:25px; padding-top: 5px;  background-color: #EFEFF2;">
     <span id="MM" class="icon-list ml10 fg-color-darken fl pointer" style="margin-right: 30px; font-size:20px;" title="菜单"> </span>
-    <span class="icon-windows8 fg-color-blue fr mi  pointer" style="margin-right: 30px; font-size:20px;" title="主页" u="<%=typeof(m)==undefine?'/main':'/mm'%>"></span>
+    <span class="icon-windows8 fg-color-blue fr mi  pointer" style="margin-right: 30px; font-size:20px;" title="主页" u="<%=typeof(m)==undefined?'/main':'/mm'%>"></span>
     <span class="icon-key fg-color-darken fr mi   pointer" style="margin-right: 30px; font-size:20px;" title="更改密码"
           u="/user/get?t=changepwd"></span>
 </header>
-
 <script type="text/javascript">
     $.getJSON('/admin/get', {t: 'sysfuns',m:'<%=typeof(m)===undefined?'0':'m'%>'}, function (d) {
         d= _.sortBy(d,function (i){return i._id;});

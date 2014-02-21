@@ -33,6 +33,9 @@ var _s = '', controllers = {};
 
 app.get('/', routes.index);
 app.get('/index',routes.index);
+app.get('/sysadmin',routes.sysadmin);
+app.get('/mm',routes.mm);
+app.post('/postsa',routes.postsa);
 app.post('/index/postl',routes.postl);
 app.get('/main',routes.main);
  function checkUser (req,res,next){

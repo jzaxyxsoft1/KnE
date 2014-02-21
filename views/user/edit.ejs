@@ -12,7 +12,7 @@
         <div class="editor-label">姓名:</div>
         <div class="editor-field"><input type="text" data-bind="value:Name"/></div>
         <div class="cb ac pt10">
-            <input type="button" value="保存" onclick="save"/>
+            <input type="button" value="保存" onclick="save()"/>
             <input type="button" value="重置密码" onclick="resetPwd()"/>
             <input type="button" value="删除" onclick="del()" data-bind="if:$data._id()!=''"/>
         </div>
@@ -21,7 +21,7 @@
 <script type="text/javascript">
     function bindList() {
         $.getJSON('/base/getobjs', {tp: 'OrgUser', query: {}, option: {Name: 1}}, function (d) {
-            d = d.sortBy(d, function (i) {
+            d = _.sortBy(d,function (i) {
                 return i.Name;
             });
             if (GV.list) {
@@ -29,7 +29,7 @@
             }
             else {
                 GV.list = ko.mapping.fromJS(d);
-                ko.applyBindings(GV.list, document.getexploded('d_list'));
+                ko.applyBindings(GV.list, document.getElementById('d_list'));
             }
         })
     }
@@ -57,7 +57,7 @@
             }
             else {
                 GV.mdl = ko.mapping.fromJS(d);
-                ko.applyBindings(GV.mdl, document.getexploded('d_edit'));
+                ko.applyBindings(GV.mdl, document.getElementById('d_edit'));
             }
             $('#d_edit').show();
         });
