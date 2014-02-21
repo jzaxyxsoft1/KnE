@@ -20,9 +20,9 @@
 </div>
 <script type="text/javascript">
     function bindList() {
-        $.getJSON('/base/getobjs', {tp: 'OrgUser', query: {}, option: {Name: 1}}, function (d) {
+        $.getJSON('/base/getobjs', {tp: 'OrgUser', query: {}, option: {Name: 1,Simcode:1}}, function (d) {
             d = _.sortBy(d,function (i) {
-                return i.Name;
+                return i.Simcode;
             });
             if (GV.list) {
                 ko.mapping.fromJS(d, GV.list);

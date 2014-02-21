@@ -3,7 +3,7 @@
     <div class="hp98 fl oya pp1" id="d_list" style="width:20%">
         <b>考试定义</b><a href="javascript:edit(0)" class="ml10">添加</a>
         <ul data-bind="foreach:$data">
-            <li><a data-bind="text:Name,click:function(){edit($data._id())}"></a></li>
+            <li><a data-bind="text:Name,click:function(){edit($data._id)}"></a></li>
         </ul>
     </div>
     <div class="hp98 pp1 oya fr hide" id="d_edit" style="width:75%">
@@ -12,7 +12,7 @@
                 <p><b>ID:</b><span data-bind="text:_id"></span></p>
 
                 <p><b>名称:</b><input type="text" data-bind="value:Name"/></p>
-                <p><b>状态:</b><label><input type="checkbox" data-bind="value:true,check:Active"/>开放</label></p>
+                <p><b>状态:</b><label><input type="checkbox" data-bind="value:true,checked:Active"/>开放</label></p>
                 <p><b>结束时间:</b><input type="text" data-bind="value:ETime"/></p>
                 <p><b>培训计划:</b><a href="javascript:showPnl('d_plan')" data-bind="text:Plan.Name" class="ml5"
                                   title="单击更改相关培训计划"></a></p>
@@ -45,7 +45,6 @@
         $('#mainContainer').hide();
         $.getJSON('/base/getobjs', {tp: 'TrainningPlan',  query: {$where:'this.ETime>="'+Date.ToDateTimeString()+'"'}}
                 , function (d) {
-                    ko.mapping.fromJS(d);
             ko.applyBindings(d, document.getElementById('d_plan'));
             $('#mainContainer').show();
         })
@@ -63,7 +62,8 @@
                 if (id == 0) {
                     var dat = new Date();
                     dat.setMonth(dat.getMonth()+1);
-                    cb(null, {_id:'',Name:'',Items:[],ETime:Date.ToDateTimeString(dat),Active:true,Plan:{Name:'单击选择培训计划',Value:''}});
+                    cb(null, {_id:'',Name:'',Items:[],ETime:Date.ToDateTimeString(dat),Active:true,
+                        Plan:{Name:'单击选择培训计划',Value:''}});
                 }
                 else {
                     cb(null,null)
@@ -91,9 +91,9 @@
         });
     }
     function planSlt(d) {
-        GV.mdl.Plan.Name(d.Name());
-        GV.mdl.Plan.Value(d._id());
-        $.getJSON('/trainning/get', {t: 'planknowledgedefines', _id: d._id()}, function (d) {
+        GV.mdl.Plan.Name(d.Name );
+        GV.mdl.Plan.Value(d._id );
+        $.getJSON('/trainning/get', {t: 'planknowledgedefines', id: d._id}, function (d) {
             GV.mdl.Items.removeAll();
             _.each(d, function (i) {
                 i.Value = 10;

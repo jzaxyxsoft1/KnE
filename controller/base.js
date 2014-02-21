@@ -24,7 +24,7 @@ exports.getihi=function (req,res){
     var tp= req.query['tp'];
     var id=req.query['id'];
     db[tp].findOne({_id:id},function (e,d){
-        db[tp].find({'ValuePath': {$regex: d._id},_id:{$ne:d._id}}).toArray(function (e,ds){
+        db[tp].find({'ValuePath': {$regex: d._id},_id:{$ne:d._id}},{Name:1,Parent:1,ValuePath:1}).toArray(function (e,ds){
             var r =[];
             var rts = _.filter(ds,function (i){return i.Parent.Value== id});
             _.each(rts,function (i){
