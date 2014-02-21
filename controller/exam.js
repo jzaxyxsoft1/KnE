@@ -4,6 +4,7 @@
 var db = require('DB').DB;
 var async = require('async');
 var _ = require('underscore');
+var ExamSvc=require('Svc').ExamSvc;
 exports.get = function (req, res) {
     var t = req.query['t'].toLowerCase();
     switch (t) {
@@ -14,28 +15,9 @@ exports.get = function (req, res) {
             res.render('exam/define.ejs',{m:true});
             break;
         case 'userexams':
-            async.waterfall([
-                function (wcb){
-                    db.Role.find({UserIDs:{$element:req.currentUser._id}},{Name:1}, function (e,ds){
-                        ds = _.map(ds,function (i){return i._id;});
-                        wcb(null,ds);
-                    });
-                },
-                function (rids,wcb) {
-                    rids = rids.join(',');
-                    db.TrainningPlan.find({$where:'this.Roles.filter(function(i){return ("'+rids+'").indexOf(i)>-1})'},{Name:1},function(e,ds){
-                        ds = _.map(ds,function (i){return i._id});
-                        wcb()
-                    })
-                },
-                function (pids, wcb) {
-                    db.ExamDefine.find({'Plan.Value':{$in:pids}},{Name:1},wcb);
-                }
-
-            ],
-                function (e, ds) {
-                    res.json(ds);
-                })
+           ExamSvc.getUserExams(req.currentUser._id, function (e,ds){
+               res.json(ds);
+           })
             break;
         case 'detail':
             var id= req.query['id'];
