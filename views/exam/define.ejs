@@ -103,9 +103,9 @@
         });
     }
     function planSlt(d) {
-        GV.mdl.Plan.Name(d.Name );
-        GV.mdl.Plan.Value(d._id );
-        $.getJSON('/trainning/get', {t: 'planknowledgedefines', id: d._id}, function (d) {
+        GV.mdl.Plan.Name(d.Name() );
+        GV.mdl.Plan.Value(d._id() );
+        $.getJSON('/trainning/get', {t: 'planknowledgedefines', id: d._id()}, function (d) {
             GV.mdl.Items.removeAll();
             _.each(d, function (i) {
                 i.Value = 10;

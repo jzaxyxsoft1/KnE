@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="812d8ec0-48b4-4641-a975-e26f8f1cdb08" name="Default" comment="Initial commit&#10;">
+    <list default="true" id="812d8ec0-48b4-4641-a975-e26f8f1cdb08" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/exam/define.ejs" afterPath="$PROJECT_DIR$/views/exam/define.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/question/edit.ejs" afterPath="$PROJECT_DIR$/views/question/edit.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/trainning.js" afterPath="$PROJECT_DIR$/controller/trainning.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="KnE.iws" />
@@ -31,24 +29,14 @@
       <file leaf-file-name="define.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/exam/define.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="21" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.24358974" vertical-offset="342" max-vertical-offset="1691">
+            <state line="71" column="24" selection-start="3120" selection-end="3120" vertical-scroll-proportion="-0.6666667" vertical-offset="968" max-vertical-offset="2109">
               <folding>
                 <element signature="e#105#122#0" expanded="true" />
                 <element signature="e#391#408#0" expanded="true" />
                 <element signature="tag#div#1;tag#div#0" expanded="false" />
                 <element signature="tag#div#1" expanded="false" />
                 <element signature="e#1953#1970#0" expanded="true" />
-                <element signature="e#3120#3872#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trainning.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/trainning.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0" vertical-offset="753" max-vertical-offset="1273">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -56,7 +44,7 @@
       <file leaf-file-name="edit.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/question/edit.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="17" selection-start="4915" selection-end="4915" vertical-scroll-proportion="-69.03571" vertical-offset="385" max-vertical-offset="2603">
+            <state line="122" column="17" selection-start="4915" selection-end="4915" vertical-scroll-proportion="-82.78571" vertical-offset="0" max-vertical-offset="2603">
               <folding>
                 <marker date="1392968620984" expanded="true" signature="2473:2624" placeholder="..." />
               </folding>
@@ -543,7 +531,11 @@
       <created>1392967282473</created>
       <updated>1392967282473</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Initial commit&#10;">
+      <created>1392971596264</created>
+      <updated>1392971596264</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -711,15 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/question/edit.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="17" selection-start="4915" selection-end="4915" vertical-scroll-proportion="-69.03571" vertical-offset="385" max-vertical-offset="2603">
-          <folding>
-            <marker date="1392968620984" expanded="true" signature="2473:2624" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/trainning.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="0" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0" vertical-offset="753" max-vertical-offset="1273">
@@ -741,16 +724,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/question/edit.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="17" selection-start="4915" selection-end="4915" vertical-scroll-proportion="-82.78571" vertical-offset="0" max-vertical-offset="2603">
+          <folding>
+            <marker date="1392968620984" expanded="true" signature="2473:2624" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/exam/define.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="21" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.24358974" vertical-offset="342" max-vertical-offset="1691">
+        <state line="71" column="24" selection-start="3120" selection-end="3120" vertical-scroll-proportion="-0.6666667" vertical-offset="968" max-vertical-offset="2109">
           <folding>
             <element signature="e#105#122#0" expanded="true" />
             <element signature="e#391#408#0" expanded="true" />
             <element signature="tag#div#1;tag#div#0" expanded="false" />
             <element signature="tag#div#1" expanded="false" />
             <element signature="e#1953#1970#0" expanded="true" />
-            <element signature="e#3120#3872#0" expanded="false" />
           </folding>
         </state>
       </provider>
