@@ -6,7 +6,7 @@
             <li><a data-bind="text:Name,click:function(){edit($data._id())}"></a></li>
         </ul>
     </div>
-    <div class="hp98 pp1 oya fr" id="d_edit" style="width:75%">
+    <div class="hp98 pp1 oya fr hide" id="d_edit" style="width:75%">
         <div class="wp96 mc hp97 pp1">
             <div class="fl pp1 bg-color-gray" style="width:28%; ">
                 <p><b>ID:</b><span data-bind="text:_id"></span></p>
@@ -27,30 +27,35 @@
             </fieldset>
             <div class="cb ac pt10">
                 <input type="button" value="保存" onclick="save()"/>
+                <input type="button" value="删除" onclick="del()"/>
             </div>
         </div>
     </div>
 </div>
-<div class="wp100 hp100 hide" id="d_plan">
+<div class="wp100 hp100  " id="d_plan">
     <div class="mc mt10 hp90 lh25" data-bind="foreach:$data">
         <a data-bind="text:Name,click:planSlt" class="ilblk" style="width:30%"></a>
     </div>
     <div class="ac pt10">
-        <input type="button" value="返回" onclick="showPnl('mms')"/>
+        <input type="button" value="返回" onclick="showPnl('mmc')"/>
     </div>
 </div>
 <script type="text/javascript">
     $(function () {
         $('#mainContainer').hide();
-        $.getJSON('/base/getobjs', {tp: 'TrainningPlan', query: {ETime: {$le: Date.ToDateTimeString()}}}, function (d) {
+        $.getJSON('/base/getobjs', {tp: 'TrainningPlan',  query: {$where:'this.ETime>="'+Date.ToDateTimeString()+'"'}}
+                , function (d) {
+                    ko.mapping.fromJS(d);
             ko.applyBindings(d, document.getElementById('d_plan'));
             $('#mainContainer').show();
         })
     })
     function bindList() {
         $.getJSON('/base/getobjs', {tp: 'ExamDefine', option: {Name: 1}}, function (d) {
+            ko.mapping.fromJS(d);
             ko.applyBindings(d, document.getElementById('d_list'));
         })
+
     }
     function edit(id) {
         async.waterfall([
@@ -58,10 +63,10 @@
                 if (id == 0) {
                     var dat = new Date();
                     dat.setMonth(dat.getMonth()+1);
-                    cb(null, {_id:'',Name:'',ETime:Date.ToDateTimeString(dat),Active:true,Plan:{Name:'单击选择培训计划',Value:''}});
+                    cb(null, {_id:'',Name:'',Items:[],ETime:Date.ToDateTimeString(dat),Active:true,Plan:{Name:'单击选择培训计划',Value:''}});
                 }
                 else {
-                    cb(null)
+                    cb(null,null)
                 }
             },
             function (o, cb) {
@@ -80,7 +85,7 @@
             }
             else {
                 GV.mdl = ko.mapping.fromJS(o);
-                ko.applyBindings(GV.mdl, document.getexploded('d_edit'));
+                ko.applyBindings(GV.mdl, document.getElementById('d_edit'));
             }
             $('#d_edit').show();
         });
@@ -105,7 +110,7 @@
         if(!m.ETime){ er+='请输入考试结束时间!\r';}
         if(er!=''){alert(er);return;}
         m.Items= _.filter(m.Items,function (i){return i.Items.Value!=0});
-        $.post(GV.NodeSvcUrl+'base/postsave',{tp:'ExamDefine',obj:JSON.stringify(m)},function(d){
+        $.post('/base/postsave',{tp:'ExamDefine',obj:JSON.stringify(m)},function(d){
             alert(d.error||'保存成功!')
             if (d.msg ){
                 GV.mdl._id(d.ID);
@@ -113,6 +118,7 @@
             }
         });
     }
+    function del(){}
     bindList();
 </script>
 <% include ../Bottom.ejs %>

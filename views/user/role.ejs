@@ -33,6 +33,7 @@
         $.getJSON('/base/getobjs', {tp: 'OrgUser', query: {}, option: {Name: 1,Simcode:1}}, function (d) {
             d= _.sortBy(d, function (i){return i.Simcode;});
             GV.Users = d;
+
             $('#mainContainer').show();
         })
     })
@@ -58,7 +59,7 @@
                     });
                 }
                 else {
-                    cb(null)
+                    cb(null,null)
                 }
             },
             function (o, cb) {
@@ -90,8 +91,8 @@
             alert('请输入角色名称!');
             return;
         }
-        $.post('/base/postsave', {obj: JSON.stringify(m)}, function (d) {
-            alert(d.error || '删除完成!')
+        $.post('/base/postsave', {tp:'Role',obj: JSON.stringify(m)}, function (d) {
+            alert(d.error || '保存成功!');
             if (d.msg) {
                 GV.mdl._id(d.ID);
                 bindList();

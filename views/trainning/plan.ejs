@@ -5,6 +5,7 @@
         <li class="lh22 ml10"><a data-bind="text:Name,click:function(){edit($data._id())}"></a></li>
     </ul>
 </div>
+
 <div class="fr hp98 pp1 hide oya" id="d_edit" style="width:75%">
     <div class="editor-container">
         <div class="editor-label">ID:</div>
@@ -50,9 +51,9 @@
     </li>
 </script>
 <script type="text/javascript">
-    $('#tabs').tabs();
+    $('#tbs').tabs();
     $(function () {
-        $('#mainContainer').hide();
+
         async.parallel([
             function (cb) {
                 $.getJSON('/base/getihi', {tp: 'BODefine', id: 'Knowledge'}, function (d) {
@@ -61,7 +62,7 @@
                 });
             },
             function (cb) {
-                $.getJSON('base/getobjs', {tp: 'Role', query: {}, option: {Name: 1}}, function (ds) {
+                $.getJSON('/base/getobjs', {tp: 'Role', query: {}, option: {Name: 1}}, function (ds) {
                     GV.Roles = ds;
                     cb();
                 });
@@ -79,7 +80,7 @@
             }
             else {
                 GV.list = ko.mapping.fromJS(d);
-                ko.applyBindings(GV.list, document.getexploded('d_list'));
+                ko.applyBindings(GV.list, document.getElementById('d_list'));
             }
         })
     }
@@ -89,27 +90,27 @@
                 if (id == 0) {
                     cb(null,{_id:'',Name:'',BTime:Date.ToDateTimeString(),ETime:Date.ToDateTimeString(),KnowledgeDefineIDs:[],RoleIDs:[]});
                 }
-                else cb(null);
+                else cb(null,null)
             },
             function (o, cb) {
                 if (o) {
                     cb(null, o);
                 }
                 else {
-                    $.getJSON('/base/getobj', {tp: 'TrainningPlan', query: {_id: id}}, function (d) {
-                        cb(null, d);
+                    $.getJSON('/base/getobj', {tp: 'TrainningPlan', query: {_id: id}}, function (ds) {
+                        cb(null, ds);
                     });
                 }
             }
-        ], function (e, obj) {
-            d.KTYS = GV.KTPS;
+        ], function (e, d) {
+            d.KTPS = GV.KTPS;
             d.Roles = GV.Roles;
             if (GV.mdl) {
                 ko.mapping.fromJS(d, GV.mdl);
             }
             else {
                 GV.mdl = ko.mapping.fromJS(d);
-                ko.applyBindings(GV.mdl, document.getexploded('d_edit'));
+                ko.applyBindings(GV.mdl, document.getElementById('d_edit'));
             }
             $('#d_edit').show();
         });
@@ -121,12 +122,12 @@
         if(!m.BTime){e+='请输入培训开始时间!\r'}
         if(!m.ETime){e+='请输入培训结束时间!\r'}
         if(m.RoleIDs.length==0){e+='请选择使用用户角色!\r'}
-        if(m.KnowledgeIDs.length==0){e+='请选择培训内容!\r'}
+        if(m.KnowledgeDefineIDs.length==0){e+='请选择培训内容!\r'}
         if(e!='') {alert(e);return;}
         else{
-            delete  m.KTYS;
+            delete  m.KTPS;
             delete  m.Roles;
-            $.post(GV.NodeSvcUrl+'base/postsave',{},function (d){
+            $.post('/base/postsave',{tp:'TrainningPlan',obj: JSON.stringify(m)},function (d){
                 alert(d.error||'保存成功!')
                 if(d.msg){
                     GV.mdl._id(d.ID);
@@ -138,7 +139,7 @@
     }
     function del(){
         if(window.confirm('是否删除'+GV.mdl.Name()+'?')){
-            $.getJSON(GV.NodeSvcUrl+'base/delete',{tp:'TrainningPlan',query:{_id:GV.mdl._id()}},function(d){
+            $.getJSON('/base/delete',{tp:'TrainningPlan',query:{_id:GV.mdl._id()}},function(d){
                 alert(d.error||'删除完成!');
                 if(d.msg){
                     bindList();
@@ -147,5 +148,6 @@
             })
         }
     }
+    bindList();
 </script>
 <% include ../Bottom.ejs %>
